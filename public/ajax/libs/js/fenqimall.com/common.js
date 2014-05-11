@@ -25,9 +25,9 @@
  * 
  * Version: 0.1.0-alpha
  * 
- * Creation Date: 2014.04.15 16:46 ( Tony ).
+ * Creation Date: 2014.05.10 14:53 ( Tony ).
  * 
- * Last Update: 2014.04.15 19:23 ( Tony ).    ...//TODO: Update the 'Last Update'.
+ * Last Update: 2014.05.10 14:53 ( Tony ).    ...//TODO: Update the 'Last Update'.
  * 
  * Music ( Custom ): Countdown (feat. Makj).mp3    ...//TODO: If you are listenning some music, just write the name of songs.
  * 
@@ -114,7 +114,7 @@
 					
 					cookie: cdnjsUrl + '/jquery_cookie/1.3.1/jquery.cookie.min',
 
-					component: 'bms_front_end_framework/component',
+					component: 'fenqimall.com/component',
 
 					uiCore: 'jquery_ui/1.10.4/minified/jquery.ui.core.min',
 					

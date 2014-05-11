@@ -21,9 +21,9 @@
  * 
  * Version: 0.1.0-alpha
  * 
- * Creation Date: 2014.04.15 16:46 ( Tony ).
+ * Creation Date: 2014.05.10 15:05 ( Tony ).
  * 
- * Last Update: 2014.04.15 17:49 ( Tony ).    ...//TODO: Update the 'Last Update'.
+ * Last Update: 2014.05.10 15:05 ( Tony ).    ...//TODO: Update the 'Last Update'.
  * 
  * Music ( Custom ): Countdown (feat. Makj).mp3    ...//TODO: If you are listenning some music, just write the name of songs.
  * 
@@ -38,13 +38,11 @@
 	
 	fn = function (require) {
 		
-		var SJ, srl, easing, modernizr, tlns, extend, _mod, mute, evtName;
+		var SJ, easing, modernizr, tlns, extend, _mod, mute, evtName,
 
-		var upload, aside, datepicker, checkbox, slt;
+			scroller;
 		
 		SJ = require('jquery');
-		
-		srl = require('srl');
 
 		modernizr = require('modernizr');
 		
@@ -54,27 +52,11 @@
 
 			modernizr.touch ? evtName = 'touchstart' : evtName = 'click';
 
-			$(':root').studioScroll({zindex: 50, cursorborder: 0, cursorborderradius: 0});
 
 
+			scroller = require('component/srl');
 
-			aside = require('component/aside');
-
-			upload = require('component/common.upload');
-
-			datepicker = require('component/datepicker');
-
-			checkbox = require('component/checkbox');
-
-			slt = require('component/select');
-
-
-
-			checkbox.excute(SJ('input'), function () { console.log('Feedback testing!'); });
-
-			slt.excute(SJ('select'));
-
-			datepicker.excute([$('#iptDatePicker_1'), $('#iptDatePicker_2'), $('#iptDatePicker_3'), $('#iptDatePicker_4')]);
+			scroller.excute($(':root'));
 
 
 

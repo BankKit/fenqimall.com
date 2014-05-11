@@ -17,23 +17,51 @@
  * 
  * Version: 0.1.0-alpha
  * 
- * Creation Date: 2014.05.10 14:51 ( Tony ).
+ * Creation Date: 2014.05.10 14:58 ( Tony ).
  * 
- * Last Update: 2014.05.10 14:51 ( Tony ).    ...//TODO: Update the 'Last Update'.
+ * Last Update: 2014.05.10 14:59 ( Tony ).    ...//TODO: Update the 'Last Update'.
  * 
- * Music ( Custom ): Countdown (feat. Makj).mp3    ...//TODO: If you are listenning some music, just write the name of songs.
+ * Music ( Custom ): Rio Rio.mp3    ...//TODO: If you are listenning some music, just write the name of songs.
  * 
  * License: ...//TODO: Give a license.
  * 
  * Copyright: ...//TODO: Give a copyright.
  */
 
-define(function () {
+define(function (require) {
 
-	require(['common'], function (common) {
-		
-		require(['fenqimall.com/app/index.logic']);
-		
-	});
+	var SJ, srl, bindSrl, mute;
+
+
+
+	SJ = require('jquery');
+
+	srl = require('srl');
+
+	mute = true;
+
+
+
+	bindSrl = function (obj) {
+
+		obj.studioScroll({zindex: 50, cursorborder: 0, cursorborderradius: 0});
+
+	};
+
+
+
+	return {
+
+		excute: function (obj) {
+
+			if (obj !== null) {
+
+				bindSrl(obj);
+
+			}
+
+		}
+
+	};
 
 });
