@@ -26,45 +26,55 @@ block content
 
 				// Registration Form.
 
-				form(id='frmIdxRgt', class='right frm clearfix frmIdxRgt', name='frmIdxRgt', action='#', method='post')
+				form(id='frmIdxRgt', class='right frm clearfix frmIdxRgt wow bounceInLeft', name='frmIdxRgt', action='#', method='post')
 
 					// Form switcher.
 
 					div(class='fullWidth clearfix form-switcher')
 
-						a(class='left touch-action clean-link default-cursor btnRegistGuide', href='#', hreflang='zh') 注册账号
+						a(class='left clean-link default-cursor btnRegistGuide', href='#', hreflang='zh') 注册账号
 
 						a(class='right touch-action hover-link btnLoginGuide', href='#', hreflang='zh') 登录
 
-					// Form inputs · User
+					// Form inputs · User ( use 'error' class to switch error and normal status )
 
-					div(class='field fullWidth minHeight-50 round-box-3px border_box touch-action user')
+					div(class='relative field fullWidth minHeight-50 round-box-3px border_box user')
 
-						input(id='iptUser', class='iptUser', name='iptUser', type='text', title='请输入用户名...', form='frmIdxRgt', placeholder='用户名', required='true', tabindex='')
+						input(id='iptUserRgt', class='iptUserRgt', name='iptUserRgt', type='text', title='请输入用户名...', form='frmIdxRgt', placeholder='用户名', required='true', tabindex='')
 
-					// Form inputs · Password
+						div(class='wrong round-box-3px hide') 错误信息 ...
 
-					div(class='field fullWidth minHeight-50 round-box-3px border_box touch-action password')
+					// Form inputs · Password ( use 'error' class to switch error and normal status )
 
-						input(id='iptPass', class='iptPass', name='iptPass', type='password', title='请输入密码...', form='frmIdxRgt', placeholder='请输入密码', required='true', tabindex='')
+					div(class='relative field fullWidth minHeight-50 round-box-3px border_box password')
 
-					// Form inputs · Confirm Password
+						input(id='iptPassRgt', class='iptPassRgt', name='iptPassRgt', type='password', title='请输入密码...', form='frmIdxRgt', placeholder='请输入密码', required='true', tabindex='')
 
-					div(class='field fullWidth minHeight-50 round-box-3px border_box touch-action double-password')
+						div(class='wrong round-box-3px hide') 错误信息 ...
 
-						input(id='iptDoublePass', class='iptDoublePass', name='iptDoublePass', type='password', title='请再次输入密码...', form='frmIdxRgt', placeholder='请输入密码', required='true', tabindex='')
+					// Form inputs · Confirm Password ( use 'error' class to switch error and normal status )
 
-					// Form inputs · Phone
+					div(class='relative field fullWidth minHeight-50 round-box-3px border_box double-password')
 
-					div(class='field fullWidth minHeight-50 round-box-3px border_box touch-action phone')
+						input(id='iptDoublePassRgt', class='iptDoublePassRgt', name='iptDoublePassRgt', type='password', title='请再次输入密码...', form='frmIdxRgt', placeholder='请输入密码', required='true', tabindex='')
 
-						input(id='iptPhone', class='iptPhone', name='iptPhone', type='text', title='请输入手机号码...', form='frmIdxRgt', placeholder='手机', required='true', tabindex='')
+						div(class='wrong round-box-3px hide') 错误信息 ...
 
-					// Form inputs · Validation Code
+					// Form inputs · Phone ( use 'error' class to switch error and normal status )
 
-					div(class='field fullWidth minHeight-50 round-box-3px border_box touch-action validation-code')
+					div(class='relative field fullWidth minHeight-50 round-box-3px border_box phone')
 
-						input(id='iptValiCode', class='iptValiCode', name='iptValiCode', type='text', title='请输入验证码...', form='frmIdxRgt', placeholder='验证码', required='true', tabindex='')
+						input(id='iptPhoneRgt', class='iptPhoneRgt', name='iptPhoneRgt', type='text', title='请输入手机号码...', form='frmIdxRgt', placeholder='手机', required='true', tabindex='')
+
+						div(class='wrong round-box-3px hide') 错误信息 ...
+
+					// Form inputs · Validation Code ( use 'error' class to switch error and normal status )
+
+					div(class='relative field fullWidth minHeight-50 round-box-3px border_box validation-code')
+
+						input(id='iptValiCodeRgt', class='iptValiCodeRgt', name='iptValiCodeRgt', type='text', title='请输入验证码...', form='frmIdxRgt', placeholder='验证码', required='true', tabindex='')
+
+						div(class='wrong round-box-3px hide') 错误信息 ...
 
 					// Form · Validation Code Output
 
@@ -72,7 +82,7 @@ block content
 
 						div(class='code-graphic round-box-3px bg-test-fill-grey')
 
-						a(href='#', class='text-center hover-link change-code') 看不清，换一个
+						a(href='#', class='text-center hover-link touch-action change-code') 看不清，换一个
 
 					// Form button · Submit
 
@@ -86,27 +96,33 @@ block content
 
 					div(class='fullWidth clearfix form-switcher')
 
-						a(class='left touch-action clean-link default-cursor btnLoginGuide', href='#', hreflang='zh') 登录汇通分期
+						a(class='left clean-link default-cursor btnLoginGuide', href='#', hreflang='zh') 登录汇通分期
 
 						a(class='right touch-action hover-link btnRegistGuide', href='#', hreflang='zh') 注册
 
-					// Form inputs · User
+					// Form inputs · User ( use 'error' class to switch error and normal status )
 
-					div(class='field fullWidth minHeight-50 round-box-3px border_box touch-action user')
+					div(class='relative field fullWidth minHeight-50 round-box-3px border_box user')
 
-						input(id='iptUser', class='iptUser', name='iptUser', type='text', title='请输入用户名...', form='frmIdxRgt', placeholder='用户名', required='true', tabindex='')
+						input(id='iptUserLogin', class='iptUserLogin', name='iptUserLogin', type='text', title='请输入用户名...', form='frmIdxLogin', placeholder='用户名', required='true', tabindex='')
 
-					// Form inputs · Password
+						div(class='wrong round-box-3px hide') 错误信息 ...
 
-					div(class='field fullWidth minHeight-50 round-box-3px border_box touch-action password')
+					// Form inputs · Password ( use 'error' class to switch error and normal status )
 
-						input(id='iptPass', class='iptPass', name='iptPass', type='password', title='请输入密码...', form='frmIdxRgt', placeholder='请输入密码', required='true', tabindex='')
+					div(class='relative field fullWidth minHeight-50 round-box-3px border_box password')
 
-					// Form inputs · Validation Code
+						input(id='iptPassLogin', class='iptPassLogin', name='iptPassLogin', type='password', title='请输入密码...', form='frmIdxLogin', placeholder='请输入密码', required='true', tabindex='')
 
-					div(class='field fullWidth minHeight-50 round-box-3px border_box touch-action validation-code')
+						div(class='wrong round-box-3px hide') 错误信息 ...
 
-						input(id='iptValiCode', class='iptValiCode', name='iptValiCode', type='text', title='请输入验证码...', form='frmIdxRgt', placeholder='验证码', required='true', tabindex='')
+					// Form inputs · Validation Code ( use 'error' class to switch error and normal status )
+
+					div(class='relative field fullWidth minHeight-50 round-box-3px border_box validation-code')
+
+						input(id='iptValiCodeLogin', class='iptValiCodeLogin', name='iptValiCodeLogin', type='text', title='请输入验证码...', form='frmIdxLogin', placeholder='验证码', required='true', tabindex='')
+
+						div(class='wrong round-box-3px hide') 错误信息 ...
 
 					// Form · Validation Code Output
 
@@ -114,7 +130,7 @@ block content
 
 						div(class='code-graphic round-box-3px bg-test-fill-grey')
 
-						a(href='#', class='text-center hover-link change-code') 看不清，换一个
+						a(href='#', class='text-center hover-link touch-action change-code') 看不清，换一个
 
 					// Form button · Submit
 
@@ -123,3 +139,19 @@ block content
 block private-body-script
 
 	+jsloader(false, 'js/fenqimall.com/index')
+
+
+
+// ___________  ______    _____  ___   ___  ___
+//("     _   ")/    " \  (\"   \|"  \ |"  \/"  |
+// )__/  \\__/// ____  \ |.\\   \    | \   \  /
+//	\\_ /  /  /    ) :)|: \.   \\  |  \\  \/
+//	|.  | (: (____/ // |.  \    \. |  /   /
+//	\:  |  \        /  |    \    \ | /   /
+//	 \__|   \"_____/    \___|\____\)|___/ 沈维忠 ( Shen Weizhong / Tony Stark ).
+//
+//* Version: 0.1.0-alpha
+//
+//* Creation Date: ~ ( Tony ).
+//
+//* Last Update: 2014.05.12 12:24 ( Tony ).

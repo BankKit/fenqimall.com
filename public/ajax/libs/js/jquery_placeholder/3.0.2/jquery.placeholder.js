@@ -1,4 +1,32 @@
-/* 
+/**
+ * Statement: ...//TODO: Write statement.
+ * 
+ * Describe: jQuery Placeholder. An HTML5 placeholder attribute polyfill.    ...//TODO: Check description.
+ * 
+ * Further Changes, Comments: https://github.com/jamesallardice/Placeholders.js/    ...//TODO: Give a further changes and comments link.
+ * 
+ * Javascript Design Pattern (Code Management):    ...//TODO: Cehck design pattern.
+ *     
+ *     Namespacing Patterns, Immediately-invoked Function Expressions (IIFE)s
+ *     
+ *     Modules Patterns, Revealing Module Pattern
+ *     
+ *     Modules Patterns, AMD modules
+ *     
+ * Docs: http://jamesallardice.github.io/Placeholders.js/    ...//TODO: Give a link about project documents.
+ * 
+ * Thanks: ...//TODO: If there are some contributors, just mark them.
+ * 
+ * Version: 3.0.2
+ * 
+ * Creation Date: ~
+ * 
+ * Last Update: 2014.05.12 12:30 ( Tony ).    ...//TODO: Update the 'Last Update'.
+ * 
+ * Music ( Custom ): Countdown (feat. Makj).mp3    ...//TODO: If you are listenning some music, just write the name of songs.
+ * 
+ * License: ...//TODO[x]: Give a license.
+ * 
  * The MIT License
  *
  * Copyright (c) 2012 James Allardice
@@ -12,7 +40,7 @@
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
+ * THE SOFTWARE. 
  */
 
 // Defines the global Placeholders object along with various utility methods

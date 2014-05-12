@@ -19,7 +19,7 @@
  *     
  * Docs: ...//TODO: Give a link about project documents.
  * 
- * Original Author: Shen Weizhong ( Tony Stark ).
+ * Original Author: 沈维忠 ( Shen Weizhong / Tony Stark ).
  * 
  * Thanks: ...//TODO: If there are some contributors, just mark them.
  * 
@@ -27,7 +27,7 @@
  * 
  * Creation Date: 2014.05.10 14:53 ( Tony ).
  * 
- * Last Update: 2014.05.10 14:53 ( Tony ).    ...//TODO: Update the 'Last Update'.
+ * Last Update: 2014.05.12 12:52 ( Tony ).    ...//TODO: Update the 'Last Update'.
  * 
  * Music ( Custom ): Countdown (feat. Makj).mp3    ...//TODO: If you are listenning some music, just write the name of songs.
  * 
@@ -126,7 +126,9 @@
 					
 					slt: 'jquery_select/0.1.0/jquery.selector.min',
 
-					placeholder: 'jquery_placeholder/3.0.2/jquery.placeholder'
+					placeholder_: 'jquery_placeholder/3.0.2/jquery.placeholder.min',
+
+					placeholdem_: 'placeholdem/1.0.1/placeholdem.min'
 					
 				},
 				
