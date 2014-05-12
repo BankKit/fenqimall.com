@@ -32,4 +32,4 @@
 
 ####现存页面清单（预览）####
 
-- [首页](http://resource.fenqimall.com/site_preview/instalment_platform/view/ '点击查看')
+- [首页](http://goo.gl/F3MROx '点击查看')
