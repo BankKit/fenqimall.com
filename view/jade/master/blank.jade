@@ -9,9 +9,9 @@
 mixin ie (sCondition, eCondition)
 
 	|<!--[!{sCondition}>
-
+	
 	block
-
+	
 	|<!!{eCondition}]-->
 
 
@@ -76,7 +76,7 @@ doctype html
 html(class='ie-gt9 no-js', lang='zh', itemscope itemtype='http://schema.org/WebPage')
 	<!--<![endif]-->
 	
-	head(id='fenqimall.com')
+	head
 		
 		//
 			Maybe we can remove meta charset.
@@ -89,7 +89,7 @@ html(class='ie-gt9 no-js', lang='zh', itemscope itemtype='http://schema.org/WebP
 		block title
 		
 		// Pre-Resolve DNS Snippet
-		include snippet/pre.resolve.dns.jade
+		include ../snippet/pre.resolve.dns.jade
 		
 		// Offical: IE = EmulateIE7, IE = 10, IE = edge, chrome = 1
 		meta(http-equiv='X-UA-Compatible', content='ie = edge, chrome = 1')
@@ -101,8 +101,7 @@ html(class='ie-gt9 no-js', lang='zh', itemscope itemtype='http://schema.org/WebP
 			brings the bars back. Tapping back in the content dismisses them again. 
 			Reference, 
 			http://www.everythingicafe.com/forum/threads/lets-talk-ios-7-1-beta-2.104595/
-		// Offical: content='width = device-width, initial-scale = 1, minimal-ui'
-		meta(name='viewport', content='width = 1024, initial-scale = 1, minimal-ui')
+		meta(name='viewport', content='width = device-width, initial-scale = 1, minimal-ui')
 		
 		meta(name='HandheldFriendly', content='true')
 		
@@ -140,21 +139,21 @@ html(class='ie-gt9 no-js', lang='zh', itemscope itemtype='http://schema.org/WebP
 		meta(name='copyright', content='')
 		
 		// Site Icon
-		include snippet/site.icon.meta.jade
+		include ../snippet/site.icon.meta.jade
 		
 		// Apple Meta Tag
-		include snippet/apple.meta.jade
+		include ../snippet/apple.meta.jade
 		
 		link(rel='author', type='text/plain', href='')
 		
 		// Public stylesheet snippet.
-		include snippet/public.stylesheet.jade
+		include ../snippet/public.stylesheet.jade
 		
 		// Private stylesheet snippet.
 		block private-stylesheet
 		
 		// Public script snippet.
-		include snippet/public.script.jade
+		include ../snippet/public.script.jade
 		
 		script.
 
@@ -212,165 +211,12 @@ html(class='ie-gt9 no-js', lang='zh', itemscope itemtype='http://schema.org/WebP
 		block private-head-javascript
 		
 	body
-
-		// Header.
-
-		// Use 'has-bottom-border' class to decide if the header should have a bottom border.
-
-		header(class='relative fullWidth global-header', itemscope itemtype='http://schema.org/WPHeader')
-
-			//Top Bar.
-
-			div(class='fullWidth border_box top-bar')
-
-				//Main area of the header part.
-
-				div(class='top-bar-main row clearfix')
-
-					//Left Top Bar.
-
-					ul(class='grid top-bar-left clearfix')
-
-						li 亲，欢迎来分期！
-
-						li 请
-
-						li
-
-							a(class='hover-link touch-action', href='#', hreflang='zh') 登录
-
-						li
-
-							a(class='hover-link touch-action', href='#', hreflang='zh') 免费注册
-
-						li
-
-							a(class='hover-link touch-action myAccount', href='#', hreflang='zh') 我的账户
-
-					//Right Top Bar.
-
-					ul(class='grid top-bar-right right clearfix')
-
-						li
-
-							a(class='hover-link touch-action aAnnouncement', href='#', hreflang='zh') 惊喜：汇通分期商城是年轻人圆梦的平台
-
-						li
-
-							a(class='hover-link touch-action', href='#', hreflang='zh') 客户端下载
-
-						li
-
-							a(class='relative more hover-link touch-action', href='#', hreflang='zh') 更多
-
-								i(class='absolute')
-
-			//Main area of the header part.
-
-			div(class='row clearfix global-header-core')
-
-				//Logo.
-
-				a(class='grid logo touch-action', data-wow-delay='1s', href='#', hreflang='zh', itemscope itemtype='http://schema.org/logo', title='亨元金融 · 汇通分期网')
-
-					div
-
-				//Navigation.
-
-				nav(class='inline-display grid right global-navigation')
-
-					ul(class='inline-display text-center clearfix', itemscope itemtype='http://schema.org/SiteNavigationElement')
-
-						li(class='left')
-
-							a(class='selected clean-link touch-action border_box', href='#', hreflang='zh') 首&nbsp;&nbsp;页
-
-						li(class='left')
-
-							a(class='clean-link touch-action border_box', href='#', hreflang='zh') 数码分期
-
-						li(class='left')
-
-							a(class='clean-link touch-action border_box', href='#', hreflang='zh') 常见问题
-
-		// Main.
-
-		main(class='relative fullWidth border_box main-content', role='main')
-			
-			block content
-
-		// Footer.
-
-		footer(class='relative fullWidth global-footer', itemscope itemtype='http://schema.org/WPFooter')
-
-			// Sitemap.
-
-			div(class='sitemap row clearfix')
-
-				div(class='grid grid_3')
-
-					h4 如何分期
-
-					a(class='hover-link touch-action', href='#', hreflang='zh') 怎样分期
-
-					a(class='hover-link touch-action', href='#', hreflang='zh') 还款方式
-
-					a(class='hover-link touch-action', href='#', hreflang='zh') 常见问题
-
-				div(class='grid grid_3')
-
-					h4 关于汇通
-
-					a(class='hover-link touch-action', href='#', hreflang='zh') 汇通分期商城简介
-
-					a(class='hover-link touch-action', href='#', hreflang='zh') 汇通公告
-
-					a(class='hover-link touch-action', href='#', hreflang='zh') 招贤纳士
-
-				div(class='grid grid_3')
-
-					h4 招商合作
-
-					a(class='hover-link touch-action', href='#', hreflang='zh') 商户入驻
-
-					a(class='hover-link touch-action', href='#', hreflang='zh') 汇通公告
-
-				div(class='spColumn grid grid_3')
-
-					h4 联系方式
-
-					span(class='left') 客服电话：
-
-					a(class='left inline-display clean-link touch-action', href="tel:1-408-555-5555") 400-808-5599
-
-					div(class='left')
-
-						a(class='inline-display clean-link touch-action', href='#', hreflang='zh') 关注我们
-
-				i(class='grid grid_12')
-
-			// Copyright.
-
-			div(class='relative copy-right')
-
-				div(class='relative row')
-
-					span(class='grid_6') © 2013-2014 上海亨元金融信息服务有限公司 版权所有 赣ICP备13002945
-
-					// CNZZ tracker script.
-
-					div(class='absolute left CNZZ-tracker')
-
-					// Referral code.
-
-					div(class='right referral-code') 推荐码：
-
-						span 1024
+		
+		block content
 					
 		block private-body-script
 		
-		include snippet/google.analytics.jade
-
+		include ../snippet/google.analytics.jade
 
 
 // ___________  ______    _____  ___   ___  ___
@@ -383,6 +229,6 @@ html(class='ie-gt9 no-js', lang='zh', itemscope itemtype='http://schema.org/WebP
 //
 //* Version: 0.1.0-alpha
 //
-//* Creation Date: 2014.05.09 12:23 ( Tony ).
+//* Creation Date: 2014.05.12 14:11 ( Tony ).
 //
-//* Last Update: 2014.05.12 12:27 ( Tony ).
+//* Last Update: 2014.05.12 14:14 ( Tony ).
