@@ -92,7 +92,7 @@ html(class='no-js', lang='zh', itemscope itemtype='http://schema.org/WebPage')
 		include snippet/pre.resolve.dns.jade
 		
 		// Offical: IE = EmulateIE7, IE = 10, IE = edge, chrome = 1
-		meta(http-equiv='X-UA-Compatible', content='ie = EmulateIE7, chrome = 1')
+		meta(http-equiv='X-UA-Compatible', content='ie = edge, chrome = 1')
 		
 		//
 			IOS Safari: Fixed in iOS 7.1 beta 2, A property, minimal-ui, has been added for 
@@ -155,6 +155,58 @@ html(class='no-js', lang='zh', itemscope itemtype='http://schema.org/WebPage')
 		
 		// Public script snippet.
 		include snippet/public.script.jade
+		
+		script.
+
+			var _wow_init = (function () {
+
+				var isIE, isGteIE9;
+
+				isIE = function() {
+					
+					var agent = navigator.userAgent.toLowerCase();
+					
+					return !!agent.match(/msie/i);
+					
+				};
+
+				isGteIE9 = function () {
+
+					var agent = navigator.userAgent.toLowerCase(),
+						
+						match = agent.match(/msie\D*([\.\d]*)/i),
+						
+						version = 0;
+					
+					if (match && match[1]) {
+						
+						version = match[1];
+						
+					}
+					
+					return version >= 9;
+
+				};
+
+				return {
+
+					init: function () {
+
+						if (isIE()) {
+
+							if (isGteIE9()) {new WOW().init();}
+
+						} else {
+
+							new WOW().init();
+
+						}
+
+					}
+
+				};
+
+			} ()).init();
 		
 		// Private javascript snippet which need to be put in the '<head/>' tag.
 		block private-head-javascript
@@ -219,7 +271,7 @@ html(class='no-js', lang='zh', itemscope itemtype='http://schema.org/WebPage')
 
 				//Logo.
 
-				a(class='grid logo', href='#', hreflang='zh', itemscope itemtype='http://schema.org/logo', title='亨元金融 · 汇通分期网')
+				a(class='grid logo', data-wow-delay='1s', href='#', hreflang='zh', itemscope itemtype='http://schema.org/logo', title='亨元金融 · 汇通分期网')
 
 					div
 
@@ -332,4 +384,4 @@ html(class='no-js', lang='zh', itemscope itemtype='http://schema.org/WebPage')
 //
 //* Creation Date: 2014.05.09 12:23 ( Tony ).
 //
-//* Last Update: 2014.05.11 16:00 ( Tony ).
+//* Last Update: 2014.05.11 19:48 ( Tony ).

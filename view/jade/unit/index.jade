@@ -10,15 +10,115 @@ block private-stylesheet
 
 block private-head-javascript
 
-
-
 block content
 
 	// Put your HTML custom content here ...
 
 	div(class='relative fullWidth index-area-placeholder index-promo')
 
+		// Test class: 'bg-test-fill-blue'.
+
 		div(class='row index-promo-main')
+
+			// Test class: 'bg-test-fill-radial-gradient'.
+
+			div(class='grid grid_12 index-promo-effective-area')
+
+				// Registration Form.
+
+				form(id='frmIdxRgt', class='right frm clearfix frmIdxRgt', name='frmIdxRgt', action='#', method='post')
+
+					// Form switcher.
+
+					div(class='fullWidth clearfix form-switcher')
+
+						a(class='left touch-action clean-link default-cursor btnRegistGuide', href='#', hreflang='zh') 注册账号
+
+						a(class='right touch-action hover-link btnLoginGuide', href='#', hreflang='zh') 登录
+
+					// Form inputs · User
+
+					div(class='field fullWidth minHeight-50 round-box-3px border_box touch-action user')
+
+						input(id='iptUser', class='iptUser', name='iptUser', type='text', title='请输入用户名...', form='frmIdxRgt', placeholder='用户名', required='true', tabindex='')
+
+					// Form inputs · Password
+
+					div(class='field fullWidth minHeight-50 round-box-3px border_box touch-action password')
+
+						input(id='iptPass', class='iptPass', name='iptPass', type='password', title='请输入密码...', form='frmIdxRgt', placeholder='请输入密码', required='true', tabindex='')
+
+					// Form inputs · Confirm Password
+
+					div(class='field fullWidth minHeight-50 round-box-3px border_box touch-action double-password')
+
+						input(id='iptDoublePass', class='iptDoublePass', name='iptDoublePass', type='password', title='请再次输入密码...', form='frmIdxRgt', placeholder='请输入密码', required='true', tabindex='')
+
+					// Form inputs · Phone
+
+					div(class='field fullWidth minHeight-50 round-box-3px border_box touch-action phone')
+
+						input(id='iptPhone', class='iptPhone', name='iptPhone', type='text', title='请输入手机号码...', form='frmIdxRgt', placeholder='手机', required='true', tabindex='')
+
+					// Form inputs · Validation Code
+
+					div(class='field fullWidth minHeight-50 round-box-3px border_box touch-action validation-code')
+
+						input(id='iptValiCode', class='iptValiCode', name='iptValiCode', type='text', title='请输入验证码...', form='frmIdxRgt', placeholder='验证码', required='true', tabindex='')
+
+					// Form · Validation Code Output
+
+					div(class='minHeight-50 border_box out-put-vali-code')
+
+						div(class='code-graphic round-box-3px bg-test-fill-grey')
+
+						a(href='#', class='text-center hover-link change-code') 看不清，换一个
+
+					// Form button · Submit
+
+					button(id='btnSubmitRegister', class='fullWidth round-box-3px btnSubmit btnSubmitRegister touch-action', name='btnSubmitRegister', type='submit', title='确认提交？') 注册
+
+				// Login Form.
+
+				form(id='frmIdxLogin', class='right frm frmIdxLogin hide', name='frmIdxLogin', action='#', method='post')
+
+					// Form switcher.
+
+					div(class='fullWidth clearfix form-switcher')
+
+						a(class='left touch-action clean-link default-cursor btnLoginGuide', href='#', hreflang='zh') 登录汇通分期
+
+						a(class='right touch-action hover-link btnRegistGuide', href='#', hreflang='zh') 注册
+
+					// Form inputs · User
+
+					div(class='field fullWidth minHeight-50 round-box-3px border_box touch-action user')
+
+						input(id='iptUser', class='iptUser', name='iptUser', type='text', title='请输入用户名...', form='frmIdxRgt', placeholder='用户名', required='true', tabindex='')
+
+					// Form inputs · Password
+
+					div(class='field fullWidth minHeight-50 round-box-3px border_box touch-action password')
+
+						input(id='iptPass', class='iptPass', name='iptPass', type='password', title='请输入密码...', form='frmIdxRgt', placeholder='请输入密码', required='true', tabindex='')
+
+					// Form inputs · Validation Code
+
+					div(class='field fullWidth minHeight-50 round-box-3px border_box touch-action validation-code')
+
+						input(id='iptValiCode', class='iptValiCode', name='iptValiCode', type='text', title='请输入验证码...', form='frmIdxRgt', placeholder='验证码', required='true', tabindex='')
+
+					// Form · Validation Code Output
+
+					div(class='minHeight-50 border_box out-put-vali-code')
+
+						div(class='code-graphic round-box-3px bg-test-fill-grey')
+
+						a(href='#', class='text-center hover-link change-code') 看不清，换一个
+
+					// Form button · Submit
+
+					button(id='btnSubmitLogin', class='fullWidth round-box-3px btnSubmit btnSubmitLogin touch-action', name='btnSubmitLogin', type='submit') 登录
 
 block private-body-script
 

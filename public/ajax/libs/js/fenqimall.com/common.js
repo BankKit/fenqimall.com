@@ -124,7 +124,9 @@
 					
 					cont: 'jquery_context/0.1.0/jquery.context.min',
 					
-					slt: 'jquery_select/0.1.0/jquery.selector.min'
+					slt: 'jquery_select/0.1.0/jquery.selector.min',
+
+					placeholder: 'jquery_placeholder/3.0.2/jquery.placeholder'
 					
 				},
 				
