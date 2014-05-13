@@ -23,7 +23,7 @@
  * 
  * Creation Date: 2014.05.10 15:05 ( Tony ).
  * 
- * Last Update: 2014.05.12 12:30 ( Tony ).    ...//TODO: Update the 'Last Update'.
+ * Last Update: 2014.05.13 11:51 ( Tony ).    ...//TODO: Update the 'Last Update'.
  * 
  * Music ( Custom ): Countdown (feat. Makj).mp3    ...//TODO: If you are listenning some music, just write the name of songs.
  * 
@@ -38,39 +38,13 @@
 	
 	fn = function (require) {
 		
-		var SJ, easing, modernizr, tlns, extend, _mod, mute, evtName, isIE, isGteIE9,
+		var SJ, easing, modernizr, tlns, extend, _mod, mute, evtName,
 
 			scroller, placeholder_, placeholdem_;
 		
 		SJ = require('jquery');
 
 		modernizr = require('modernizr');
-
-		isIE = function() {
-			
-			var agent = navigator.userAgent.toLowerCase();
-			
-			return !!agent.match(/msie/i);
-			
-		};
-
-		isGteIE9 = function () {
-
-			var agent = navigator.userAgent.toLowerCase(),
-				
-				match = agent.match(/msie\D*([\.\d]*)/i),
-				
-				version = 0;
-			
-			if (match && match[1]) {
-				
-				version = match[1];
-				
-			}
-			
-			return version > 9;
-
-		};
 		
 		SJ(function ($) {
 
@@ -82,43 +56,7 @@
 
 			placeholder_ = require('placeholder_');
 
-			placeholdem_ = require('placeholdem_');
-
 			scroller.excute($(':root'));
-
-			var placeholdem_arr = [
-
-				$('#iptUserRgt').get(0),
-
-				$('#iptPassRgt').get(0),
-
-				$('#iptDoublePassRgt').get(0),
-
-				$('#iptPhoneRgt').get(0),
-
-				$('#iptValiCodeRgt').get(0),
-
-				$('#iptUserLogin').get(0),
-
-				$('#iptPassLogin').get(0),
-
-				$('#iptValiCodeLogin').get(0)
-
-			];
-
-			if (isIE()) {
-
-				if (isGteIE9()) {
-
-					placeholdem_.excute(placeholdem_arr);
-
-				}
-
-			} else {
-
-				placeholdem_.excute(placeholdem_arr);
-
-			}
 
 
 
