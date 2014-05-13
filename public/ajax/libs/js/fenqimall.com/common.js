@@ -52,11 +52,11 @@
 			
 			baseUrl = '../public/ajax/libs/js';
 			
-			cdnjsUrl = '//resource.fenqimall.com/ajax/libs/js';
+			cdnjsUrl = '//resource.fenqimall.com/ajax/libs/js/';
 			
-			jq1x = cdnjsUrl + '/jquery/1.11.1/jquery.min';
+			jq1x = cdnjsUrl + 'jquery/1.11.1/jquery.min';
 			
-			jq2x = cdnjsUrl + '/jquery/2.1.1/jquery.min';
+			jq2x = cdnjsUrl + 'jquery/2.1.1/jquery.min';
 			
 		/* End | Options */
 		
@@ -102,17 +102,19 @@
 				
 				paths: {
 					
-					modernizr: cdnjsUrl + '/modernizr_amd/modernizr.min',
+					modernizr: cdnjsUrl + 'modernizr_amd/modernizr.min',
 					
-					jqPrivate: cdnjsUrl + '/jquery_private/jquery.private.min',
+					jqPrivate: cdnjsUrl + 'jquery_private/jquery.private.min',
 					
 					jquery: jquery,
+
+					jqMigrate: cdnjsUrl + 'jquery_migrate/1.2.1/jquery.migrate',
 					
-					srl: cdnjsUrl + '/jquery_scroll/0.1.0/jquery.scroll.min',
+					srl: cdnjsUrl + 'jquery_scroll/0.1.0/jquery.scroll.min',
 					
-					easing: cdnjsUrl + '/jquery_easing/1.3/jquery.easing',
+					easing: cdnjsUrl + 'jquery_easing/1.3/jquery.easing',
 					
-					cookie: cdnjsUrl + '/jquery_cookie/1.3.1/jquery.cookie.min',
+					cookie: cdnjsUrl + 'jquery_cookie/1.3.1/jquery.cookie.min',
 
 					component: 'fenqimall.com/component',
 
