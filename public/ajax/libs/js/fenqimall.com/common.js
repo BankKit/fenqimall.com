@@ -27,7 +27,7 @@
  * 
  * Creation Date: 2014.05.10 14:53 ( Tony ).
  * 
- * Last Update: 2014.05.12 13:46 ( Tony ).    ...//TODO: Update the 'Last Update'.
+ * Last Update: 2014.05.13 15:04 ( Tony ).    ...//TODO: Update the 'Last Update'.
  * 
  * Music ( Custom ): Countdown (feat. Makj).mp3    ...//TODO: If you are listenning some music, just write the name of songs.
  * 
@@ -130,7 +130,9 @@
 
 					placeholder_: 'jquery_placeholder/3.0.2/jquery.placeholder.min',
 
-					placeholdem_: 'placeholdem/1.0.1/placeholdem.min'
+					placeholdem_: 'placeholdem/1.0.1/placeholdem.min',
+
+					jquery_validation: 'jquery_validation/1.12.0/jquery.validate'
 					
 				},
 				
