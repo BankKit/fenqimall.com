@@ -21,9 +21,9 @@
  * 
  * Version: 0.1.0-alpha
  * 
- * Creation Date: 2014.05.10 15:05 ( Tony ).
+ * Creation Date: 2014.05.13 10:25 ( Tony ).
  * 
- * Last Update: 2014.05.12 12:30 ( Tony ).    ...//TODO: Update the 'Last Update'.
+ * Last Update: 2014.05.13 10:55 ( Tony ).    ...//TODO: Update the 'Last Update'.
  * 
  * Music ( Custom ): Countdown (feat. Makj).mp3    ...//TODO: If you are listenning some music, just write the name of songs.
  * 
@@ -44,33 +44,9 @@
 		
 		SJ = require('jquery');
 
+		easing = require('easing');
+
 		modernizr = require('modernizr');
-
-		isIE = function() {
-			
-			var agent = navigator.userAgent.toLowerCase();
-			
-			return !!agent.match(/msie/i);
-			
-		};
-
-		isGteIE9 = function () {
-
-			var agent = navigator.userAgent.toLowerCase(),
-				
-				match = agent.match(/msie\D*([\.\d]*)/i),
-				
-				version = 0;
-			
-			if (match && match[1]) {
-				
-				version = match[1];
-				
-			}
-			
-			return version > 9;
-
-		};
 		
 		SJ(function ($) {
 
@@ -80,81 +56,25 @@
 
 			scroller = require('component/srl');
 
-			placeholder_ = require('placeholder_');
-
-			placeholdem_ = require('placeholdem_');
-
 			scroller.excute($(':root'));
 
-			var placeholdem_arr = [
-
-				$('#iptUserRgt').get(0),
-
-				$('#iptPassRgt').get(0),
-
-				$('#iptDoublePassRgt').get(0),
-
-				$('#iptPhoneRgt').get(0),
-
-				$('#iptValiCodeRgt').get(0),
-
-				$('#iptUserLogin').get(0),
-
-				$('#iptPassLogin').get(0),
-
-				$('#iptValiCodeLogin').get(0)
-
-			];
-
-			if (isIE()) {
-
-				if (isGteIE9()) {
-
-					placeholdem_.excute(placeholdem_arr);
-
-				}
-
-			} else {
-
-				placeholdem_.excute(placeholdem_arr);
-
-			}
 
 
+			var progress_done = function () {
 
-			var frmRegister = $('#frmIdxRgt'),
-
-				frmLogin = $('#frmIdxLogin');
-
-			var frmRegister_btnLoginGuide = frmRegister.find('.btnLoginGuide');
-
-			var frmLogin_btnRegistGuide = frmLogin.find('.btnRegistGuide');
-
-			var frmIndexSwitcher = function (e) {
-
-				e.stopPropagation();
-
-				e.preventDefault();
-
-				var _this = $(this),
-
-					itsForm = _this.closest('form');
-
-				itsForm.addClass('hide');
-
-				itsForm.siblings().removeClass('hide');
-
-				if (e.data.carry === 'go to login ...') {
-
-					itsForm.removeClass('wow bounceInLeft');
-
-				}
+				$('.btns').removeClass('hide').addClass('animated shake');
 
 			};
 
-			frmRegister_btnLoginGuide.on(evtName, {carry: 'go to login ...'}, frmIndexSwitcher);
+			$('.bar').animate({left: 0}, {
 
-			frmLogin_btnRegistGuide.on(evtName, {carry: 'go to register ...'}, frmIndexSwitcher);			
+				duration: 3000,
+
+				easing: 'easeInCirc',
+
+				done: progress_done
+
+			});
 
 
 
