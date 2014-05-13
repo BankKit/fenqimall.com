@@ -23,7 +23,7 @@
  * 
  * Creation Date: 2014.05.10 15:05 ( Tony ).
  * 
- * Last Update: 2014.05.13 11:51 ( Tony ).    ...//TODO: Update the 'Last Update'.
+ * Last Update: 2014.05.13 14:39 ( Tony ).    ...//TODO: Update the 'Last Update'.
  * 
  * Music ( Custom ): Countdown (feat. Makj).mp3    ...//TODO: If you are listenning some music, just write the name of songs.
  * 
@@ -38,15 +38,33 @@
 	
 	fn = function (require) {
 		
-		var SJ, easing, modernizr, tlns, extend, _mod, mute, evtName,
-
-			scroller, placeholder_, placeholdem_;
+		var SJ, jqMigrate;
 		
 		SJ = require('jquery');
 
-		modernizr = require('modernizr');
+		jqMigrate = require('jqMigrate');
 		
 		SJ(function ($) {
+
+			var easing,
+
+				modernizr,
+
+				tlns,
+
+				extend,
+
+				_mod,
+
+				mute,
+
+				evtName,
+
+				scroller,
+
+				placeholder_;
+
+			modernizr = require('modernizr');
 
 			tlns = tlns || {}; //top-level namespace
 
@@ -56,9 +74,25 @@
 
 			placeholder_ = require('placeholder_');
 
+			/*
+					 (__)
+					 (oo)
+			  /-------\/
+			 / |     ||----> Docuement Scroller.
+			*  ||----||
+			  ___/  ___/
+			*/
+
 			scroller.excute($(':root'));
 
-
+			/*
+					 (__)
+					 (oo)
+			  /-------\/
+			 / |     ||----> Login/Register Form Switcher.
+			*  ||----||
+			  ___/  ___/
+			*/
 
 			var frmRegister = $('#frmIdxRgt'),
 
@@ -92,9 +126,16 @@
 
 			frmRegister_btnLoginGuide.on(evtName, {carry: 'go to login ...'}, frmIndexSwitcher);
 
-			frmLogin_btnRegistGuide.on(evtName, {carry: 'go to register ...'}, frmIndexSwitcher);			
+			frmLogin_btnRegistGuide.on(evtName, {carry: 'go to register ...'}, frmIndexSwitcher);
 
-
+			/*
+					 (__)
+					 (oo)
+			  /-------\/
+			 / |     ||----> Make the default action of the event will not be triggered.
+			*  ||----||
+			  ___/  ___/
+			*/
 
 			$('a[href=#]').on('click', function (e) {
 
