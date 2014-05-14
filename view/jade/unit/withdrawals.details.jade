@@ -1,0 +1,281 @@
+extends ../master/master.jade
+
+block title
+
+	title 详细资料 · 申请提现 · 亨元金融 · 汇通分期网
+
+block private-stylesheet
+
+	+importCSS(false, 'css/fenqimall.com/withdrawals.details.css')
+
+block private-head-javascript
+
+block content
+
+	// Put your HTML custom content here ...
+
+	div(class='relative fullWidth')
+
+		// Test class: 'bg-test-fill-blue'.
+
+		div(class='row clearfix')
+
+			// Test class: 'bg-test-fill-radial-gradient'.
+
+			div(class='grid grid_12 clearfix effective-area')
+
+				// Left aside tab nav.
+
+				aside(class='left minHeight-500 fullWidth border_box unselectable global-aside-layout')
+
+					ul
+
+						li(class='fullWidth')
+
+							a(class='clean-link fullWidth minHeight-50 text-center select', href='#', hreflang='zh') 我的账户
+
+						li(class='fullWidth')
+
+							a(class='clean-link fullWidth minHeight-50 text-center', href='#', hreflang='zh') 交易记录
+
+						li(class='fullWidth')
+
+							a(class='clean-link fullWidth minHeight-50 text-center', href='#', hreflang='zh') 我的资料
+
+						li(class='fullWidth')
+
+							a(class='clean-link fullWidth minHeight-50 text-center', href='#', hreflang='zh') 补充附件
+
+						li(class='fullWidth')
+
+							a(class='clean-link fullWidth minHeight-50 text-center', href='#', hreflang='zh') 修改密码
+
+				// Right main content.
+
+				div(class='left clearfix right-main-layout')
+
+					div(class='relative right minHeight-500 right-main-effective-area')
+
+						// Section · Basic Info
+
+						section(class='fullWidth minHeight-100 sec-basic-info')
+
+							h1(class='fullWidth border_box') 完善信息
+
+							div(class='fullWidth sec-bio') 
+
+								span 申请提现金额：
+
+								span(class='money-highlight') 3000.00 
+
+								每期还款（
+
+								span(class='money-highlight') 300.00
+
+								元）× 9 期
+
+							ul(class='block fullWidth clearfix')
+
+								li(class='left __lbl') 姓名：
+
+								li(class='left __content') Lucian
+
+								li(class='left __lbl') 身份证号：
+
+								li(class='left __content') 32118****************
+
+								li(class='left __lbl') 身份：
+
+								li(class='left __content') 白领
+
+								li(class='left __lbl') 手机：
+
+								li(class='left __content') 136****5959
+
+						ul(class='block fullWidth clearfix')
+
+							// Section · School Info · >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+							li(class='fullWidth sec-school-info _here')
+
+								ul(class='fullWidth')
+
+									li(class='relative border_box sec-header') 学校信息
+
+										i(class='absolute edit-status hide')
+
+										div(class='absolute pointer-cursor text-center to-edit hide') 编辑
+
+								ul(class='sec-cntent hide')
+
+									li
+
+										form(id='frm-school-info', class='fullWidth minHeight-100 _frm frm-school-info', name='frm-school-info', action='#', method='post')
+
+											ul(class='block fullWidth clearfix')
+
+												li(class='left __lbl') 
+
+													span *
+
+													学校名称：
+
+												li(class='left __content')
+
+													div(class='field border_box')
+
+														div(class='left border_box hide') 错误提示信息...
+
+												li(class='left __lbl') 
+
+													span *
+
+													学制：
+
+												li(class='left __content')
+
+													div(class='field border_box')
+
+														div(class='left border_box hide') 错误提示信息...
+
+												li(class='left __lbl')
+
+													span *
+
+													学历：
+
+												li(class='left __content')
+
+													div(class='field border_box')
+
+														div(class='left border_box hide') 错误提示信息...
+
+												li(class='left __lbl')
+
+													span *
+
+													入学时间：
+
+												li(class='left __content')
+
+													div(class='field border_box')
+
+														div(class='left border_box hide') 错误提示信息...
+
+												li(class='left __lbl')
+
+													span *
+
+													年级：
+
+												li(class='left __content')
+
+													div(class='field border_box')
+
+														div(class='left border_box hide') 错误提示信息...
+
+												li(class='left __lbl')
+
+													span *
+
+													学号：
+
+												li(class='left __content')
+
+													div(class='field border_box')
+
+														div(class='left border_box hide') 错误提示信息...
+
+												li(class='left __lbl') 
+
+													span *
+
+													所在院系：
+
+												li(class='left __content')
+
+													div(class='field border_box')
+
+														div(class='left border_box hide') 错误提示信息...
+
+												li(class='left __lbl') 
+
+													span *
+
+													专业：
+
+												li(class='left __content')
+
+													div(class='field border_box')
+
+														div(class='left border_box hide') 错误提示信息...
+
+												li(class='left __lbl') 
+
+													span *
+
+													学生类型：
+
+												li(class='left __content')
+
+													div(class='field border_box')
+
+														div(class='left border_box hide') 错误提示信息...
+
+											div(class='fullWidth minHeight-50 btn-tool')
+
+												button(id='', class='right', name='', type='submit', title='确认提交？') 继续
+
+							// Section · Contact Info · >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+							li(class='fullWidth sec-contact-info')
+
+								ul(class='fullWidth')
+
+									li(class='relative border_box sec-header') 联系信息
+
+										i(class='absolute edit-status hide')
+
+								ul(class='sec-cntent hide')
+
+									li
+
+										form(id='frm-school-info', class='fullWidth minHeight-100 _frm frm-school-info', name='frm-school-info', action='#', method='post')
+
+							// Section · Linkman Info · >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+							li(class='fullWidth sec-linkman-info')
+
+								ul(class='fullWidth')
+
+									li(class='relative border_box sec-header') 联系人信息
+
+										i(class='absolute edit-status hide')
+
+								ul(class='sec-cntent hide')
+
+									li
+
+										form(id='frm-school-info', class='fullWidth minHeight-100 _frm frm-school-info', name='frm-school-info', action='#', method='post')
+
+						div(class='absolute fullWidth minHeight-50 bg-test-fill-radial-gradient fucking-footer') &nbsp;
+
+block private-body-script
+
+	+jsloader(false, 'js/fenqimall.com/withdrawals.details')
+
+
+
+// ___________  ______    _____  ___   ___  ___
+//("     _   ")/    " \  (\"   \|"  \ |"  \/"  |
+// )__/  \\__/// ____  \ |.\\   \    | \   \  /
+//	\\_ /  /  /    ) :)|: \.   \\  |  \\  \/
+//	|.  | (: (____/ // |.  \    \. |  /   /
+//	\:  |  \        /  |    \    \ | /   /
+//	 \__|   \"_____/    \___|\____\)|___/ 沈维忠 ( Shen Weizhong / Tony Stark ).
+//
+//* Version: 0.1.0-alpha
+//
+//* Creation Date: 2014.05.13 15:56 ( Tony ).
+//
+//* Last Update: 2014.05.14 11:19 ( Tony ).

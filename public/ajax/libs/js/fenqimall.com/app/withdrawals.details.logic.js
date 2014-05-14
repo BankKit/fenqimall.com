@@ -21,9 +21,9 @@
  * 
  * Version: 0.1.0-alpha
  * 
- * Creation Date: 2014.05.10 15:05 ( Tony ).
+ * Creation Date: 2014.05.13 18:26 ( Tony ).
  * 
- * Last Update: 2014.05.14 10:47 ( Tony ).    ...//TODO: Update the 'Last Update'.
+ * Last Update: 2014.05.13 18:28 ( Tony ).    ...//TODO: Update the 'Last Update'.
  * 
  * Music ( Custom ): Countdown (feat. Makj).mp3    ...//TODO: If you are listenning some music, just write the name of songs.
  * 
@@ -39,8 +39,6 @@
 	fn = function (require) {
 		
 		var SJ,
-
-			jqMigrate,
 
 			easing,
 
@@ -62,13 +60,11 @@
 		
 		SJ = require('jquery');
 
-		jqMigrate = require('jqMigrate');
+		easing = require('easing');
 
 		modernizr = require('modernizr');
 
 		scroller = require('component/srl');
-
-		placeholder_ = require('placeholder_');
 
 
 		
@@ -78,68 +74,13 @@
 
 			modernizr.touch ? evtName = 'touchstart' : evtName = 'click';
 
-			/*
-					 (__)
-					 (oo)
-			  /-------\/
-			 / |     ||----> Docuement Scroller.
-			*  ||----||
-			  ___/  ___/
-			*/
-
 			scroller.excute($(':root'));
 
-			/*
-					 (__)
-					 (oo)
-			  /-------\/
-			 / |     ||----> Login/Register Form Switcher.
-			*  ||----||
-			  ___/  ___/
-			*/
 
-			var frmRegister = $('#frmIdxRgt'),
 
-				frmLogin = $('#frmIdxLogin');
+			$('._here .sec-cntent').slideDown();
 
-			var frmRegister_btnLoginGuide = frmRegister.find('.btnLoginGuide');
 
-			var frmLogin_btnRegistGuide = frmLogin.find('.btnRegistGuide');
-
-			var frmIndexSwitcher = function (e) {
-
-				e.stopPropagation();
-
-				e.preventDefault();
-
-				var _this = $(this),
-
-					itsForm = _this.closest('form');
-
-				itsForm.addClass('hide');
-
-				itsForm.siblings().removeClass('hide');
-
-				if (e.data.carry === 'go to login ...') {
-
-					itsForm.removeClass('wow bounceInLeft');
-
-				}
-
-			};
-
-			frmRegister_btnLoginGuide.on(evtName, {carry: 'go to login ...'}, frmIndexSwitcher);
-
-			frmLogin_btnRegistGuide.on(evtName, {carry: 'go to register ...'}, frmIndexSwitcher);
-
-			/*
-					 (__)
-					 (oo)
-			  /-------\/
-			 / |     ||----> Make the default action of the event will not be triggered.
-			*  ||----||
-			  ___/  ___/
-			*/
 
 			$('a[href=#]').on('click', function (e) {
 
@@ -155,7 +96,7 @@
 			
 		});
 
-		
+
 		
 	};
 	
