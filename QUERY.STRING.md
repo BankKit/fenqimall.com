@@ -4,8 +4,10 @@
 ####学校信息 · 栏目 · 字段####
 
 ```bash
-http[s]://server/path/program?appNo=&iptSchoolName=&sltEducationalSystem=&sltEducationBackground=&sltEducationBackground=&sltAdmissionDateYear=&sltAdmissionDateMonth=&sltGrade=&iptStuId=&iptStuDepartment=&iptStuMajor=&sltStuType=
+http[s]://server/path/program?frmUuid=&appNo=&iptSchoolName=&sltEducationalSystem=&sltEducationBackground=&sltEducationBackground=&sltAdmissionDateYear=&sltAdmissionDateMonth=&sltGrade=&iptStuId=&iptStuDepartment=&iptStuMajor=&sltStuType=
 ```
+
+> + 表单唯一标识 · frmUuid
 
 > + 流水号 · appNo
 
