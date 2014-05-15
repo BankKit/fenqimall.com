@@ -1,23 +1,28 @@
-###申请提现 · 详细资料###
+申请提现 · 详细资料 · 页面
+==========================
 
-学校信息 · 字段：
+####学校信息 · 栏目 · 字段####
 
-+ 学校名称 · iptSchoolName
+```bash
+http[s]://server/path/program?iptSchoolName=&sltEducationalSystem=&sltEducationBackground=&sltEducationBackground=&sltAdmissionDateYear=&sltAdmissionDateMonth=&sltGrade=&iptStuId=&iptStuDepartment=&iptStuMajor=&sltStuType=
+```
 
-+ 学制 · sltEducationalSystem
+> + 学校名称 · iptSchoolName
 
-+ 学历 · sltEducationBackground
+> + 学制 · sltEducationalSystem
 
-+ 入学时间（年） · sltAdmissionDateYear
+> + 学历 · sltEducationBackground
 
-+ 入学时间（月） · sltAdmissionDateMonth
+> + 入学时间（年） · sltAdmissionDateYear
 
-+ 年级 · sltGrade
+> + 入学时间（月） · sltAdmissionDateMonth
 
-+ 学号 · iptStuId
+> + 年级 · sltGrade
 
-+ 所在院系 · iptStuDepartment
+> + 学号 · iptStuId
 
-+ 专业 · iptStuMajor
+> + 所在院系 · iptStuDepartment
 
-+ 学生类型 · sltStuType
+> + 专业 · iptStuMajor
+
+> + 学生类型 · sltStuType
