@@ -17,7 +17,7 @@
  * 
  * Creation Date: 2014.05.13 16:02 ( Tony ).
  * 
- * Last Update: 2014.05.13 16:02 ( Tony ).    ...//TODO: Update the 'Last Update'.
+ * Last Update: 2014.05.15 20:01 ( Tony ).    ...//TODO: Update the 'Last Update'.
  * 
  * Music ( Custom ):     ...//TODO: If you are listenning some music, just write the name of songs.
  * 
@@ -386,17 +386,30 @@ aside.global-aside-layout a.select {
 
 }
 
-._frm .__content > .field {
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Form · Field.
+*  ||----||
+  ___/  ___/
+*/
+
+.field {
 
 	height: 30px;
 
 	width: 270px;
 
+}
+
+.field.has-border {
+
 	border: 1px solid #ccc;
 
 }
 
-.ie7 ._frm .__content > .field {
+.ie7 .field.has-border {
 
 	height: 28px;
 
@@ -404,24 +417,126 @@ aside.global-aside-layout a.select {
 
 }
 
-.error {
+.txt-ipt {
+
+	float: left;
+
+	width: 258px;
+
+	padding: 0 !important;
+
+	margin-top: 5px;
+
+	margin-left: 5px;
+
+}
+
+.ie7 .txt-ipt {
+
+	margin-top: 3px;
+
+}
+
+.___error {
+
+	width: 100%;
 
 	display: block;
-
-	color: #e72e21;
-
-	font-size: 12px;
 
 	line-height: 17px;
 
 	height: 15px !important;
 
-	margin-top: 30px;
+}
+
+.___error .error {
+
+	color: #e72e21;
+
+	font-size: 12px;
 
 	padding-left: 23px;
 
 	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAAEF7NTqAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2lpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpFMTBGRUVBMEQ5MTZFMzExQTIxOEIwMTEwQTMxRTI4MCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpCMzMxQzUzN0RCNTExMUUzQjlCMkZBQjdCRTA5NDU2RCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpCMzMxQzUzNkRCNTExMUUzQjlCMkZBQjdCRTA5NDU2RCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ZGJkM2Q1YWItYmIyOC1hYTQ3LTg0OWYtNzY3NzY0NTI0N2EwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkUxMEZFRUEwRDkxNkUzMTFBMjE4QjAxMTBBMzFFMjgwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/7RzvgAAANpJREFUeNpi/G/MAAJzGICMOf+BACCAIAyQKIgH4gAEEFwKJsAI1wQBKQABBBP4BcRsLCCtUJn/TAxIAMRhBOLfIBoggGB6/jNgAkYmqGEQcAZFzS+8OgECCCYZBMStUMFqIF4HkugGMkrQdPSAJLAZxcDEgAPglejBIt6D01UAAQaTEIe6rBCImbGY8BeI+6GmvwRpApm0CqwYFDomjJhaEOIgzWEgTdeBDA2sirAbcgOnT/EBJqjn/qJEHsx0GI2IVJC6apCmdUAsDfakCeNfrEZDxHug6tYBAOn8V8JGMB5fAAAAAElFTkSuQmCC) 5px center no-repeat;
 
+}
+
+.ie7 .___error {
+
+	line-height: 15px;
+
+}
+
+.txt-ipt + .___error {
+
+	margin-top: 10px;
+
+}
+
+.ie7 .txt-ipt + .___error {
+
+	margin-top: 8px;
+
+}
+
+select + .___error {
+
+	margin-top: 2px;
+
+}
+
+select {
+
+	-moz-appearance: none;
+	
+	-webkit-appearance: none !important;
+
+	appearance: none;
+	
+	font-size: 14px;
+
+	line-height: 25px;
+
+	height: 30px;
+
+	text-indent: 0.01px; /* Removes default arrow from firefox */
+
+	text-overflow: ""; /* Removes default arrow from firefox */
+	
+	border: 1px solid #CCC;
+	
+	background: #fafafa url("data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI2cHgiIGhlaWdodD0iM3B4IiB2aWV3Qm94PSIwIDAgNiAzIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2IDMiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIHBvaW50cz0iNS45OTIsMCAyLjk5MiwzIC0wLjAwOCwwICIvPjwvc3ZnPg==") 97% center no-repeat;
+	
+}
+
+select:hover {
+	
+	background-color: #f3f3f3;
+	
+	border-color: #999;
+	
+}
+
+select::-ms-expand {
+	
+	display: none;
+	
+}
+
+@-moz-document url-prefix() {
+	
+	select {
+		
+		background: #FFF;
+		
+	}
+	
+	select:hover {
+		
+		background: #f3f3f3;
+		
+	}
+	
 }
 
 /*
@@ -615,29 +730,25 @@ aside.global-aside-layout a.select {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Simple Footer.
+*  ||----||
+  ___/  ___/
+*/
 
 .fucking-footer {
+	
+	color: #CCC;
 
 	line-height: 50px;
 
 	bottom: 0;
 
 	left: 0;
+	
+	border-top: 1px solid #CCC;
 
 }

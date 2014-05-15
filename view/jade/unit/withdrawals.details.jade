@@ -56,7 +56,7 @@ block content
 
 					div(class='relative right minHeight-500 right-main-effective-area')
 
-						// Section · Basic Info
+						// Section · Basic Info · >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 						section(class='fullWidth minHeight-100 sec-basic-info')
 
@@ -68,11 +68,11 @@ block content
 
 								span(class='money-highlight') 3000.00 
 
-								每期还款（
+								| 每期还款（
 
 								span(class='money-highlight') 300.00
 
-								元）× 9 期
+								| 元）× 9 期
 
 							ul(class='block fullWidth clearfix')
 
@@ -110,121 +110,221 @@ block content
 
 									li
 
-										form(id='frm-school-info', class='fullWidth minHeight-100 _frm frm-school-info', name='frm-school-info', action='#', method='post')
+										form(id='frmSchoolInfo', class='fullWidth minHeight-100 _frm frmSchoolInfo', name='frmSchoolInfo', action='#', method='post')
 
 											ul(class='block fullWidth clearfix')
 
-												li(class='left __lbl') 
+												li(class='left __lbl')
 
 													span *
 
-													学校名称：
+													| 学校名称：
 
 												li(class='left __content')
 
-													div(class='field border_box')
+													div(class='field border_box has-border')
 
-														div(class='left border_box hide') 错误提示信息...
+														input(id='iptSchoolName', class='txt-ipt iptSchoolName', name='iptSchoolName', type='text', value='', title='')
 
-												li(class='left __lbl') 
-
-													span *
-
-													学制：
-
-												li(class='left __content')
-
-													div(class='field border_box')
-
-														div(class='left border_box hide') 错误提示信息...
+														div(class='left border_box hide ___error __iptSchoolName')
 
 												li(class='left __lbl')
 
 													span *
 
-													学历：
+													| 学制：
 
 												li(class='left __content')
 
 													div(class='field border_box')
 
-														div(class='left border_box hide') 错误提示信息...
+														select(id='sltEducationalSystem', class='sltEducationalSystem', name='sltEducationalSystem')
+
+															option(value='')
+
+															option(value='全日制') 全日制
+
+															option(value='全日制') 全日制
+
+															option(value='全日制') 全日制
+
+															option(value='全日制') 全日制
+
+															option(value='全日制') 全日制
+
+														div(class='left border_box hide ___error __sltEducationalSystem')
 
 												li(class='left __lbl')
 
 													span *
 
-													入学时间：
+													| 学历：
 
 												li(class='left __content')
 
 													div(class='field border_box')
 
-														div(class='left border_box hide') 错误提示信息...
+														select(id='sltEducationBackground', class='sltEducationBackground', name='sltEducationBackground')
+
+															option(value='')
+
+															option(value='本科') 本科
+
+															option(value='本科') 本科
+
+															option(value='本科') 本科
+
+															option(value='本科') 本科
+
+															option(value='本科') 本科
+
+														div(class='left border_box hide ___error __sltEducationBackground')
 
 												li(class='left __lbl')
 
 													span *
 
-													年级：
+													| 入学时间：
 
 												li(class='left __content')
 
 													div(class='field border_box')
 
-														div(class='left border_box hide') 错误提示信息...
+														select(id='sltAdmissionDateYear', class='left sltAdmissionDateYear', name='sltAdmissionDateYear', style='width: 100px !important; margin-right: 10px;')
+
+															option(value='')
+
+															option(value='请选择年') 请选择年
+
+															option(value='请选择年') 请选择年
+
+															option(value='请选择年') 请选择年
+
+															option(value='请选择年') 请选择年
+
+															option(value='请选择年') 请选择年
+
+														span(class='left', style='margin-right: 10px;') 年
+
+														select(id='sltAdmissionDateMonth', class='left sltAdmissionDateMonth', name='sltAdmissionDateMonth', style='width: 100px !important; margin-right: 10px;')
+
+															option(value='')
+
+															option(value='请选择月') 请选择月
+
+															option(value='请选择月') 请选择月
+
+															option(value='请选择月') 请选择月
+
+															option(value='请选择月') 请选择月
+
+															option(value='请选择月') 请选择月
+
+														span(class='left', style='margin-right: 10px;') 月
+
+														div(class='relative left border_box hide ___error')
+
+															div(class='absolute left border_box __sltAdmissionDateYear')
+
+															div(class='absolute left border_box __sltAdmissionDateMonth', style='margin-left: 130px;')
 
 												li(class='left __lbl')
 
 													span *
 
-													学号：
+													| 年级：
 
 												li(class='left __content')
 
 													div(class='field border_box')
 
-														div(class='left border_box hide') 错误提示信息...
+														select(id='sltGrade', class='sltGrade', name='sltGrade')
 
-												li(class='left __lbl') 
+															option(value='')
+
+															option(value='大一') 大一
+
+															option(value='大一') 大一
+
+															option(value='大一') 大一
+
+															option(value='大一') 大一
+
+															option(value='大一') 大一
+
+														div(class='left border_box hide ___error __sltGrade')
+
+												li(class='left __lbl')
 
 													span *
 
-													所在院系：
+													| 学号：
 
 												li(class='left __content')
 
-													div(class='field border_box')
+													div(class='field border_box has-border')
 
-														div(class='left border_box hide') 错误提示信息...
+														input(id='iptStuId', class='txt-ipt iptStuId', name='iptStuId', type='text', value='', title='')
 
-												li(class='left __lbl') 
+														div(class='left border_box hide ___error __iptStuId')
+
+												li(class='left __lbl')
 
 													span *
 
-													专业：
+													| 所在院系：
 
 												li(class='left __content')
 
-													div(class='field border_box')
+													div(class='field border_box has-border')
 
-														div(class='left border_box hide') 错误提示信息...
+														input(id='iptStuDepartment', class='txt-ipt iptStuDepartment', name='iptStuDepartment', type='text', value='', title='')
 
-												li(class='left __lbl') 
+														div(class='left border_box hide ___error __iptStuDepartment')
+
+												li(class='left __lbl')
 
 													span *
 
-													学生类型：
+													| 专业：
+
+												li(class='left __content')
+
+													div(class='field border_box has-border')
+
+														input(id='iptStuMajor', class='txt-ipt iptStuMajor', name='iptStuMajor', type='text', value='', title='')
+
+														div(class='left border_box hide ___error __iptStuMajor')
+
+												li(class='left __lbl')
+
+													span *
+
+													| 学生类型：
 
 												li(class='left __content')
 
 													div(class='field border_box')
 
-														div(class='left border_box hide') 错误提示信息...
+														select(id='sltStuType', class='sltStuType', name='sltStuType')
+
+															option(value='')
+
+															option(value='学生类型一') 学生类型一
+
+															option(value='学生类型一') 学生类型一
+
+															option(value='学生类型一') 学生类型一
+
+															option(value='学生类型一') 学生类型一
+
+															option(value='学生类型一') 学生类型一
+
+														div(class='left border_box hide ___error __sltStuType')
 
 											div(class='fullWidth minHeight-50 btn-tool')
 
-												button(id='', class='right', name='', type='submit', title='确认提交？') 继续
+												button(id='btnSchoolInfo', class='right btnSchoolInfo', name='btnSchoolInfo', type='submit', title='确认提交？') 继续
 
 							// Section · Contact Info · >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -240,7 +340,7 @@ block content
 
 									li
 
-										form(id='frm-school-info', class='fullWidth minHeight-100 _frm frm-school-info', name='frm-school-info', action='#', method='post')
+										form(id='frm-contact-info', class='fullWidth minHeight-100 _frm frm-contact-info', name='frm-contact-info', action='#', method='post')
 
 							// Section · Linkman Info · >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -256,9 +356,9 @@ block content
 
 									li
 
-										form(id='frm-school-info', class='fullWidth minHeight-100 _frm frm-school-info', name='frm-school-info', action='#', method='post')
+										form(id='frm-linkman-info', class='fullWidth minHeight-100 _frm frm-linkman-info', name='frm-linkman-info', action='#', method='post')
 
-						div(class='absolute fullWidth minHeight-50 bg-test-fill-radial-gradient fucking-footer') &nbsp;
+						div(class='absolute text-left fullWidth minHeight-50 fucking-footer') &copy; 2013-2014 江西汇通金融信息服务有限公司 版权所有 赣ICP备13002945
 
 block private-body-script
 
@@ -278,4 +378,4 @@ block private-body-script
 //
 //* Creation Date: 2014.05.13 15:56 ( Tony ).
 //
-//* Last Update: 2014.05.14 11:19 ( Tony ).
+//* Last Update: 2014.05.15 20:02 ( Tony ).
