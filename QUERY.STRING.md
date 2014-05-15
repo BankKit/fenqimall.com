@@ -4,8 +4,10 @@
 ####学校信息 · 栏目 · 字段####
 
 ```bash
-http[s]://server/path/program?iptSchoolName=&sltEducationalSystem=&sltEducationBackground=&sltEducationBackground=&sltAdmissionDateYear=&sltAdmissionDateMonth=&sltGrade=&iptStuId=&iptStuDepartment=&iptStuMajor=&sltStuType=
+http[s]://server/path/program?appNo=&iptSchoolName=&sltEducationalSystem=&sltEducationBackground=&sltEducationBackground=&sltAdmissionDateYear=&sltAdmissionDateMonth=&sltGrade=&iptStuId=&iptStuDepartment=&iptStuMajor=&sltStuType=
 ```
+
+> + 流水号 · appNo
 
 > + 学校名称 · iptSchoolName
 
