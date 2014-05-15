@@ -11,6 +11,8 @@ http[s]://server/path/program?frmUuid=&appNo=&iptSchoolName=&sltEducationalSyste
 
 > + 流水号 · appNo
 
+> + 用户标识 · userId
+
 > + 学校名称 · iptSchoolName
 
 > + 学制 · sltEducationalSystem
