@@ -26,3 +26,5 @@ http[s]://server/path/program?iptSchoolName=&sltEducationalSystem=&sltEducationB
 > + 专业 · iptStuMajor
 
 > + 学生类型 · sltStuType
+
+![Geek](http://instasrc.com/1024x468/geek)
