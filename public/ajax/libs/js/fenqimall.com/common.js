@@ -111,6 +111,8 @@
 					jqMigrate: cdnjsUrl + 'jquery_migrate/1.2.1/jquery.migrate',
 					
 					srl: cdnjsUrl + 'jquery_scroll/0.1.0/jquery.scroll.min',
+
+					jquery_xdomainrequest: 'jquery_xdomainrequest/1.0.2/jquery.xdomainrequest',
 					
 					easing: cdnjsUrl + 'jquery_easing/1.3/jquery.easing',
 					
@@ -132,7 +134,11 @@
 
 					placeholdem_: 'placeholdem/1.0.1/placeholdem.min',
 
-					jquery_validation: 'jquery_validation/1.11.1/jquery.validate.min'
+					jquery_validation: 'jquery_validation/1.12.0/jquery.validate',
+
+					jquery_form: 'jquery_form/3.50.0/jquery.form',
+
+					spn: 'spin/2.0.1/spin'
 					
 				},
 				

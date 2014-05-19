@@ -15,7 +15,7 @@
  *     
  * Docs: http://jqueryvalidation.org/     ...//TODO: Give a link about project documents.
  * 
- * Original Author: Jörn Zaefferer(https://github.com/jzaefferer), Shen Weizhong ( Tony Stark ).
+ * Original Author: Jörn Zaefferer(https://github.com/jzaefferer), 沈维忠 ( Shen Weizhong / Tony Stark ).
  * 
  * Thanks: ...//TODO: If there are some contributors, just mark them.
  * 
@@ -671,7 +671,7 @@
 				// specified in the element's HTML5 data attribute
 				// return the generic message if present and no method specific message is present
 				customDataMessage: function( element, method ) {
-					return $( element ).data( "msg" + method[ 0 ].toUpperCase() +
+					return $( element ).data( "msg" + method.charAt(0).toUpperCase() +
 						method.substring( 1 ).toLowerCase() ) || $( element ).data("msg");
 				},
 
@@ -976,7 +976,7 @@
 				var method, value,
 					rules = {}, $element = $( element );
 				for ( method in $.validator.methods ) {
-					value = $element.data( "rule" + method[ 0 ].toUpperCase() + method.substring( 1 ).toLowerCase() );
+					value = $element.data( "rule" + method.charAt(0).toUpperCase() + method.substring( 1 ).toLowerCase() );
 					if ( value !== undefined ) {
 						rules[ method ] = value;
 					}
@@ -985,11 +985,13 @@
 			},
 
 			staticRules: function( element ) {
-				var rules = {},
-					validator = $.data(element.form, "validator");
+				var rules = {};
 
-				if ( validator.settings.rules ) {
-					rules = $.validator.normalizeRule(validator.settings.rules[element.name]) || {};
+				if ( element.form ) {
+				        var validator = $.data(element.form, "validator");
+				       if ( validator.settings.rules ) {
+				           rules = $.validator.normalizeRule(validator.settings.rules[element.name]) || {};
+				     }
 				}
 				return rules;
 			},
