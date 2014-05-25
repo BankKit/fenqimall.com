@@ -110,7 +110,7 @@ block content
 
 									li
 
-										form(id='frmSchoolInfo', class='fullWidth minHeight-30 _frm frmSchoolInfo', name='frmSchoolInfo', action='//192.168.0.59:8080/fenqimall/formServlet', method='post', data-frmuuid='1', data-appno='123456', data-userid='iTonyYo')
+										form(id='frmSchoolInfo', class='fullWidth minHeight-30 _frm frmSchoolInfo', name='frmSchoolInfo', action='//114.215.194.232:8180/formServlet', method='post', data-frmuuid='1', data-appno='123456', data-userid='iTonyYo')
 
 											ul(class='block fullWidth clearfix')
 
@@ -124,7 +124,7 @@ block content
 
 													div(class='field border_box has-border')
 
-														input(id='iptSchoolName', class='txt-ipt iptSchoolName', name='iptSchoolName', type='text', value='', title='')
+														input(id='iptSchoolName', class='txt-ipt iptSchoolName', name='iptSchoolName', type='text', value='去你妈的！', title='')
 
 														div(class='left border_box hide ___error __iptSchoolName')
 
@@ -138,9 +138,9 @@ block content
 
 													div(class='field border_box')
 
-														select(id='sltEducationalSystem', class='sltEducationalSystem', name='sltEducationalSystem')
+														select(id='sltEducationalSystem', class='sltEducationalSystem', name='sltEducationalSystem', data-selected='全日制')
 
-															option(value='')
+															option(value='') 请选择
 
 															option(value='全日制') 全日制
 
@@ -158,9 +158,9 @@ block content
 
 													div(class='field border_box')
 
-														select(id='sltEducationBackground', class='sltEducationBackground', name='sltEducationBackground')
+														select(id='sltEducationBackground', class='sltEducationBackground', name='sltEducationBackground', data-selected='EDC5')
 
-															option(value='')
+															option(value='') 请选择
 
 															option(value='EDC1') 预科
 
@@ -186,9 +186,9 @@ block content
 
 													div(class='field border_box')
 
-														select(id='sltAdmissionDateYear', class='left sltAdmissionDateYear', name='sltAdmissionDateYear', style='width: 100px !important; margin-right: 10px;')
+														select(id='sltAdmissionDateYear', class='left sltAdmissionDateYear', name='sltAdmissionDateYear', data-selected='1940', style='width: 100px !important; margin-right: 10px;')
 
-															option(value='')
+															option(value='') 请选择
 
 															option(value='1940') 1940
 
@@ -342,9 +342,9 @@ block content
 
 														span(class='left', style='margin-right: 10px;') 年
 
-														select(id='sltAdmissionDateMonth', class='left sltAdmissionDateMonth', name='sltAdmissionDateMonth', style='width: 100px !important; margin-right: 10px;')
+														select(id='sltAdmissionDateMonth', class='left sltAdmissionDateMonth', data-selected='1', name='sltAdmissionDateMonth', style='width: 100px !important; margin-right: 10px;')
 
-															option(value='')
+															option(value='') 请选择
 
 															option(value='1') 1
 
@@ -388,7 +388,9 @@ block content
 
 													div(class='field border_box')
 
-														select(id='sltGrade', class='sltGrade', name='sltGrade')
+														select(id='sltGrade', class='sltGrade', name='sltGrade', data-selected='CLAD')
+
+															option(value='') 请先选择学历
 
 														div(class='left border_box hide ___error __sltGrade')
 
@@ -402,7 +404,7 @@ block content
 
 													div(class='field border_box has-border')
 
-														input(id='iptStuId', class='txt-ipt iptStuId', name='iptStuId', type='text', value='', title='')
+														input(id='iptStuId', class='txt-ipt iptStuId', name='iptStuId', type='text', value='1111111111111111', title='')
 
 														div(class='left border_box hide ___error __iptStuId')
 
@@ -416,7 +418,7 @@ block content
 
 													div(class='field border_box has-border')
 
-														input(id='iptStuDepartment', class='txt-ipt iptStuDepartment', name='iptStuDepartment', type='text', value='', title='')
+														input(id='iptStuDepartment', class='txt-ipt iptStuDepartment', name='iptStuDepartment', type='text', value='去你妈的！', title='')
 
 														div(class='left border_box hide ___error __iptStuDepartment')
 
@@ -430,7 +432,7 @@ block content
 
 													div(class='field border_box has-border')
 
-														input(id='iptStuMajor', class='txt-ipt iptStuMajor', name='iptStuMajor', type='text', value='', title='')
+														input(id='iptStuMajor', class='txt-ipt iptStuMajor', name='iptStuMajor', type='text', value='去你妈的！', title='')
 
 														div(class='left border_box hide ___error __iptStuMajor')
 
@@ -444,9 +446,9 @@ block content
 
 													div(class='field border_box')
 
-														select(id='sltStuType', class='sltStuType', name='sltStuType')
+														select(id='sltStuType', class='sltStuType', name='sltStuType', data-selected='XSL3')
 
-															option(value='')
+															option(value='') 请选择
 
 															option(value='XSL1') 在校生
 
@@ -516,7 +518,7 @@ block content
 
 									li
 
-										form(id='frmContactInfo', class='fullWidth minHeight-30 _frm frmContactInfo', name='frmContactInfo', action='//192.168.0.59:8080/fenqimall/formServlet', method='post', data-frmuuid='2', data-appno='123456', data-userid='iTonyYo')
+										form(id='frmContactInfo', class='fullWidth minHeight-30 _frm frmContactInfo', name='frmContactInfo', action='//114.215.194.232:8180/formServlet', data-geography='//114.215.194.232:8180/provinceServlet', method='post', data-frmuuid='2', data-appno='123456', data-userid='iTonyYo')
 
 											ul(class='block fullWidth clearfix')
 
@@ -534,15 +536,21 @@ block content
 
 													div(class='field border_box __fullWidth')
 
-														select(id='sltAddressSchoolProvince', class='left sltAddressSchoolProvince', name='sltAddressSchoolProvince', style='width: 130px !important; margin-right: 10px;')
+														select(id='sltAddressSchoolProvince', class='left sltAddressSchoolProvince', name='sltAddressSchoolProvince', data-selected='110000', style='width: 130px !important; margin-right: 10px;')
+
+															option(value='') 请选择
 
 														span(class='left', style='margin-right: 10px;') 省
 
-														select(id='sltAddressSchoolCity', class='left sltAddressSchoolCity', name='sltAddressSchoolCity', style='width: 130px !important; margin-right: 10px;')
+														select(id='sltAddressSchoolCity', class='left sltAddressSchoolCity', name='sltAddressSchoolCity', data-selected='110100', style='width: 130px !important; margin-right: 10px;')
+
+															option(value='') 请先选择省
 
 														span(class='left', style='margin-right: 10px;') 市
 
-														select(id='sltAddressSchoolDistrict', class='left sltAddressSchoolDistrict', name='sltAddressSchoolDistrict', style='width: 130px !important; margin-right: 10px;')
+														select(id='sltAddressSchoolDistrict', class='left sltAddressSchoolDistrict', name='sltAddressSchoolDistrict', data-selected='110101', style='width: 130px !important; margin-right: 10px;')
+
+															option(value='') 请先选择市
 
 														span(class='left', style='margin-right: 10px;') 区
 
@@ -564,7 +572,7 @@ block content
 
 													div(class='field border_box large has-border')
 
-														input(id='iptSchoolAddressDetails', class='txt-ipt iptSchoolAddressDetails', name='iptSchoolAddressDetails', type='text', value='', title='')
+														input(id='iptSchoolAddressDetails', class='txt-ipt iptSchoolAddressDetails', name='iptSchoolAddressDetails', type='text', value='去你妈的！', title='')
 
 														div(class='left border_box hide ___error __iptSchoolAddressDetails')
 
@@ -582,15 +590,21 @@ block content
 
 													div(class='field border_box __fullWidth')
 
-														select(id='sltAddressHomeProvince', class='left sltAddressHomeProvince', name='sltAddressHomeProvince', style='width: 130px !important; margin-right: 10px;')
+														select(id='sltAddressHomeProvince', class='left sltAddressHomeProvince', name='sltAddressHomeProvince', data-selected='110000', style='width: 130px !important; margin-right: 10px;')
+
+															option(value='') 请选择
 
 														span(class='left', style='margin-right: 10px;') 省
 
-														select(id='sltAddressHomeCity', class='left sltAddressHomeCity', name='sltAddressHomeCity', style='width: 130px !important; margin-right: 10px;')
+														select(id='sltAddressHomeCity', class='left sltAddressHomeCity', name='sltAddressHomeCity', data-selected='110100', style='width: 130px !important; margin-right: 10px;')
+
+															option(value='') 请先选择省
 
 														span(class='left', style='margin-right: 10px;') 市
 
-														select(id='sltAddressHomeDistrict', class='left sltAddressHomeDistrict', name='sltAddressHomeDistrict', style='width: 130px !important; margin-right: 10px;')
+														select(id='sltAddressHomeDistrict', class='left sltAddressHomeDistrict', name='sltAddressHomeDistrict', data-selected='110101', style='width: 130px !important; margin-right: 10px;')
+
+															option(value='') 请先选择市
 
 														span(class='left', style='margin-right: 10px;') 区
 
@@ -612,7 +626,7 @@ block content
 
 													div(class='field border_box large has-border')
 
-														input(id='iptHomeAddressDetails', class='txt-ipt iptHomeAddressDetails', name='iptHomeAddressDetails', type='text', value='', title='')
+														input(id='iptHomeAddressDetails', class='txt-ipt iptHomeAddressDetails', name='iptHomeAddressDetails', type='text', value='去你妈的！', title='')
 
 														div(class='left border_box hide ___error __iptHomeAddressDetails')
 
@@ -624,7 +638,7 @@ block content
 
 													div(class='field border_box __fullWidth')
 
-														select(id='sltAddressNowType', class='sltAddressNowType', name='sltAddressNowType', style='width: 270px !important;')
+														select(id='sltAddressNowType', class='sltAddressNowType', name='sltAddressNowType', data-selected='单位地址', style='width: 270px !important;')
 
 															option(value='学校地址') 学校地址
 
@@ -644,15 +658,21 @@ block content
 
 													div(class='field border_box __fullWidth')
 
-														select(id='sltAddressNowProvince', class='left sltAddressNowProvince', name='sltAddressNowProvince', style='width: 130px !important; margin-right: 10px;')
+														select(id='sltAddressNowProvince', class='left sltAddressNowProvince', name='sltAddressNowProvince', data-selected='110000', style='width: 130px !important; margin-right: 10px;')
+
+															option(value='') 请选择
 
 														span(class='left', style='margin-right: 10px;') 省
 
-														select(id='sltAddressNowCity', class='left sltAddressNowCity', name='sltAddressNowCity', style='width: 130px !important; margin-right: 10px;')
+														select(id='sltAddressNowCity', class='left sltAddressNowCity', name='sltAddressNowCity', data-selected='110100', style='width: 130px !important; margin-right: 10px;')
+
+															option(value='') 请先选择省
 
 														span(class='left', style='margin-right: 10px;') 市
 
-														select(id='sltAddressNowDistrict', class='left sltAddressNowDistrict', name='sltAddressNowDistrict', style='width: 130px !important; margin-right: 10px;')
+														select(id='sltAddressNowDistrict', class='left sltAddressNowDistrict', name='sltAddressNowDistrict', data-selected='110101', style='width: 130px !important; margin-right: 10px;')
+
+															option(value='') 请先选择市
 
 														span(class='left', style='margin-right: 10px;') 区
 
@@ -674,7 +694,7 @@ block content
 
 													div(class='field border_box large has-border')
 
-														input(id='iptAddressNowDetails', class='txt-ipt iptAddressNowDetails', name='iptAddressNowDetails', type='text', value='', title='')
+														input(id='iptAddressNowDetails', class='txt-ipt iptAddressNowDetails', name='iptAddressNowDetails', type='text', value='去你妈的！', title='')
 
 														div(class='left border_box hide ___error __iptAddressNowDetails')
 
@@ -714,7 +734,7 @@ block content
 
 									li
 
-										form(id='frmLinkmanInfo', class='fullWidth minHeight-100 _frm frmLinkmanInfo _final', name='frmLinkmanInfo', action='//192.168.0.59:8080/fenqimall/formServlet', method='post', data-frmuuid='3', data-appno='123456', data-userid='iTonyYo')
+										form(id='frmLinkmanInfo', class='fullWidth minHeight-100 _frm frmLinkmanInfo _final', name='frmLinkmanInfo', action='//114.215.194.232:8180/formServlet', method='post', data-frmuuid='3', data-appno='123456', data-userid='iTonyYo')
 
 											ul(class='block fullWidth clearfix')
 
@@ -760,7 +780,7 @@ block content
 
 													div(class='field border_box')
 
-														select(id='sltImmediateFamilyRelation', class='sltImmediateFamilyRelation', name='sltImmediateFamilyRelation')
+														select(id='sltImmediateFamilyRelation', class='sltImmediateFamilyRelation', name='sltImmediateFamilyRelation', data-selected='父亲')
 
 															option(value='父亲') 父亲
 
@@ -780,7 +800,7 @@ block content
 
 													div(class='field border_box')
 
-														select(id='sltEmergencyContactRelation', class='sltEmergencyContactRelation', name='sltEmergencyContactRelation')
+														select(id='sltEmergencyContactRelation', class='sltEmergencyContactRelation', name='sltEmergencyContactRelation', data-selected='母亲')
 
 															option(value='父亲') 父亲
 
@@ -956,4 +976,4 @@ block private-body-script
 //
 //* Creation Date: 2014.05.13 15:56 ( Tony ).
 //
-//* Last Update: 2014.05.15 20:02 ( Tony ).
+//* Last Update: 2014.05.19 20:07 ( Tony ).
