@@ -103,8 +103,6 @@ http[s]://server/path/program?_frmUuid=&_appNo=&_userId=&iptImmediateFamilyName=
 
 > + 紧急联系人（地址） · iptEmergencyContactAddress
 
-![Geek](http://instasrc.com/1024x468/geek)
-
 
 
 白领 · 申请提现 · 详细资料 · 页面
