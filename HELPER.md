@@ -8,6 +8,7 @@ D:\Regular\Development\Apache Software Foundation\Tomcat\webapps\DROPBOX\Browser
 
 ```bash
 D:/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/
+```
 
 ####本地主机路径，Localhost####
 
@@ -30,3 +31,10 @@ jade -P -w demo/jade/unit/ -o demo/
 ```bash
 sass --watch public/ajax/libs/css/bms/scss/:public/ajax/libs/css/bms/ --style compressed --scss
 ```
+
+
+
+C:\Program Files\MongoDB 2.6 Standard\bin\mongo.exe
+C:\data
+
+C:\Program Files\MongoDB 2.6 Standard\bin\mongod.exe --dbpath C:\data
