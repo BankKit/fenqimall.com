@@ -22,35 +22,6 @@ block content
 
 			div(class='grid grid_12 clearfix effective-area')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 				// Left aside tab nav.
 
 				aside(class='left minHeight-500 fullWidth border_box unselectable global-aside-layout')
@@ -77,35 +48,6 @@ block content
 
 							a(class='clean-link fullWidth minHeight-50 text-center', href='#', hreflang='zh') 修改密码
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 				// Right main content.
 
 				div(class='left clearfix right-main-layout')
@@ -113,14 +55,6 @@ block content
 					div(class='relative right minHeight-500 right-main-effective-area')
 
 						a(class='redirector-link hide', href='//store.apple.com/cn', hreflang='zh')
-
-
-
-
-
-
-
-
 
 						section(class='fullWidth minHeight-100 sec-basic-info')
 
@@ -156,20 +90,7 @@ block content
 
 								li(class='left __content') 136****5959
 
-
-
-
-
-
-
-
-
 						ul(class='block fullWidth clearfix')
-
-
-
-
-							
 
 							// Section · Personal Info · >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -187,7 +108,7 @@ block content
 
 									li
 
-										form(id='frmPersonalInfo', class='fullWidth minHeight-30 _frm frmPersonalInfo', name='frmPersonalInfo', action='//114.215.194.232:8180/formServlet', method='post', data-frmuuid='1', data-appno='12345678910', data-userid='YOU MOTHERFUCKER! BITCH!')
+										form(id='frmPersonalInfo', class='fullWidth minHeight-30 _frm frmPersonalInfo', name='frmPersonalInfo', action='//192.168.0.181:8080/fenqimall/CollarFormServlet', method='post', data-frmuuid='1', data-appno='12345678910', data-userid='YOU MOTHERFUCKER! BITCH!')
 
 											ul(class='block fullWidth clearfix')
 
@@ -204,7 +125,7 @@ block content
 
 													div(class='field border_box has-border')
 
-														input(id='iptSchoolName', class='txt-ipt iptSchoolName', name='iptSchoolName', type='text', value='去你妈的！', title='请填写您的毕业院校')
+														input(id='iptSchoolName', class='txt-ipt iptSchoolName', name='iptSchoolName', type='text', value='去你妈的！')
 
 														div(class='left border_box hide ___error __iptSchoolName')
 
@@ -221,7 +142,7 @@ block content
 
 													div(class='field border_box')
 
-														select(id='sltGraduationDateYear', class='left sltGraduationDateYear', name='sltGraduationDateYear', data-selected='', style='width: 100px !important; margin-right: 10px;', title='请选择您的毕业时间（年）')
+														select(id='sltGraduationDateYear', class='left sltGraduationDateYear', name='sltGraduationDateYear', data-selected='1940', style='width: 100px !important; margin-right: 10px;')
 
 															option(value='') 请选择
 
@@ -377,7 +298,7 @@ block content
 
 														span(class='left', style='margin-right: 10px;') 年
 
-														select(id='sltGraduationDateMonth', class='left sltGraduationDateMonth', data-selected='', name='sltGraduationDateMonth', style='width: 100px !important; margin-right: 10px;', title='请选择您的毕业时间（月）')
+														select(id='sltGraduationDateMonth', class='left sltGraduationDateMonth', data-selected='1', name='sltGraduationDateMonth', style='width: 100px !important; margin-right: 10px;')
 
 															option(value='') 请选择
 
@@ -426,7 +347,7 @@ block content
 
 													div(class='field border_box')
 
-														select(id='sltEducationBackground', class='sltEducationBackground', name='sltEducationBackground', data-selected='', title='请选择您的学历')
+														select(id='sltEducationBackground', class='sltEducationBackground', name='sltEducationBackground', data-selected='EDC1')
 
 															option(value='') 请选择
 
@@ -457,7 +378,7 @@ block content
 
 													div(class='field border_box')
 
-														select(id='sltEducationalSystem', class='sltEducationalSystem', name='sltEducationalSystem', data-selected='', title='请选择您的学制')
+														select(id='sltEducationalSystem', class='sltEducationalSystem', name='sltEducationalSystem', data-selected='全日制')
 
 															option(value='') 请选择
 
@@ -480,9 +401,17 @@ block content
 
 													div(class='field border_box')
 
-														select(id='sltMatrimonySystem', class='sltMatrimonySystem', name='sltMatrimonySystem', data-selected='', title='请选择您的婚姻状况')
+														select(id='sltMatrimonySystem', class='sltMatrimonySystem', name='sltMatrimonySystem', data-selected='Q001')
 
 															option(value='') 请选择
+
+															option(value='Q001') 已婚
+
+															option(value='Q002') 未婚
+
+															option(value='Q003') 离异
+
+															option(value='Q004') 丧偶
 
 														div(class='left border_box hide ___error __sltMatrimonySystem')
 
@@ -499,9 +428,21 @@ block content
 
 													div(class='field border_box')
 
-														select(id='sltHousingSystem', class='sltHousingSystem', name='sltHousingSystem', data-selected='', title='请选择您的住房状况')
+														select(id='sltHousingSystem', class='sltHousingSystem', name='sltHousingSystem', data-selected='Z001')
 
 															option(value='') 请选择
+
+															option(value='Z001') 自购有贷款
+
+															option(value='Z002') 自购无贷款
+
+															option(value='Z003') 单位分配
+
+															option(value='Z004') 与父母同住
+
+															option(value='Z005') 租用
+
+															option(value='Z006') 自建
 
 														div(class='left border_box hide ___error __sltHousingSystem')
 
@@ -515,32 +456,27 @@ block content
 
 												li(class='left __lbl') 毕业院校：
 
-												li(class='left __content __1') 上海复旦大学
+												li(class='left __content __1')
 
 												li(class='left __lbl') 毕业时间：
 
-												li(class='left __content __2') 全日制
+												li(class='left __content __2')
 
 												li(class='left __lbl') 最高学历：
 
-												li(class='left __content __3') 本科
+												li(class='left __content __3')
 
 												li(class='left __lbl') 学制：
 
-												li(class='left __content __4') 2013年9月
+												li(class='left __content __4')
 
 												li(class='left __lbl') 婚姻状况：
 
-												li(class='left __content __5') 大一
+												li(class='left __content __5')
 
 												li(class='left __lbl') 住房状况：
 
-												li(class='left __content __6') 2012012218
-
-
-
-
-
+												li(class='left __content __6')
 
 							// Section · Unit Info · >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -558,7 +494,7 @@ block content
 
 									li
 
-										form(id='frmUnitInfo', class='fullWidth minHeight-30 _frm frmUnitInfo', name='frmUnitInfo', action='//114.215.194.232:8180/formServlet', data-geography='//114.215.194.232:8180/provinceServlet', method='post', data-frmuuid='2', data-appno='11121314151617181920', data-userid='HOLLY SHIT! FUCKER!')
+										form(id='frmUnitInfo', class='fullWidth minHeight-30 _frm frmUnitInfo', name='frmUnitInfo', action='//192.168.0.181:8080/fenqimall/CollarFormServlet', data-geography='//114.215.194.232:8180/provinceServlet', method='post', data-frmuuid='2', data-appno='11121314151617181920', data-userid='HOLLY SHIT! FUCKER!')
 
 											ul(class='block fullWidth clearfix')
 
@@ -574,7 +510,7 @@ block content
 
 													div(class='field border_box has-border')
 
-														input(id='iptCurrentUnitName', class='txt-ipt iptCurrentUnitName', name='iptCurrentUnitName', type='text', value='去你妈的！', title='请填写您的现单位名称')
+														input(id='iptCurrentUnitName', class='txt-ipt iptCurrentUnitName', name='iptCurrentUnitName', type='text', value='去你妈的！')
 
 														div(class='left border_box hide ___error __iptCurrentUnitName')
 
@@ -591,21 +527,45 @@ block content
 
 													div(class='field border_box')
 
-														select(id='sltBusinessKind', class='sltBusinessKind', name='sltBusinessKind', data-selected='', title='请选择您所处行业类别')
+														select(id='sltBusinessKind', class='sltBusinessKind', name='sltBusinessKind', data-selected='A005')
 
 															option(value='') 请选择
 
-															option(value='') 类别你妹啊！
+															option(value='A001') 政府机关、事业单位
 
-															option(value='') 类别你妹啊！
+															option(value='A002') 科教文卫
 
-															option(value='') 类别你妹啊！
+															option(value='A003') 邮电通信
 
-															option(value='') 类别你妹啊！
+															option(value='A004') 部队
 
-															option(value='') 类别你妹啊！
+															option(value='A005') IT 网络、计算机
 
-															option(value='') 类别你妹啊！
+															option(value='A006') 商业、贸易
+
+															option(value='A007') 金融机构
+
+															option(value='A008') 房地产开发
+
+															option(value='A009') 保险经纪、中介
+
+															option(value='A010') 旅游、饭店、娱乐
+
+															option(value='A011') 自由业、个体店铺
+
+															option(value='A012') 广告
+
+															option(value='A013') 农、林、渔、畜牧
+
+															option(value='A014') 制造业、加工业
+
+															option(value='A015') 运输业
+
+															option(value='A016') 律师、会计师
+
+															option(value='A017') 装修
+
+															option(value='A018') 其它
 
 														div(class='left border_box hide ___error __sltBusinessKind')
 
@@ -621,7 +581,7 @@ block content
 
 													div(class='field border_box has-border')
 
-														input(id='iptBadgeID', class='txt-ipt iptBadgeID', name='iptBadgeID', type='text', value='去你妈的！', title='请填写您的工号（选填）')
+														input(id='iptBadgeID', class='txt-ipt iptBadgeID', name='iptBadgeID', type='text', value='去你妈的！')
 
 														div(class='left border_box hide ___error __iptBadgeID')
 
@@ -638,21 +598,25 @@ block content
 
 													div(class='field border_box')
 
-														select(id='sltUnitAttribute', class='sltUnitAttribute', name='sltUnitAttribute', data-selected='', title='请选择您所处单位性质')
+														select(id='sltUnitAttribute', class='sltUnitAttribute', name='sltUnitAttribute', data-selected='D006')
 
 															option(value='') 请选择
 
-															option(value='') 单位性质你妹啊！
+															option(value='D001') 政府机关
 
-															option(value='') 单位性质你妹啊！
+															option(value='D002') 事业单位
 
-															option(value='') 单位性质你妹啊！
+															option(value='D003') 国有企业
 
-															option(value='') 单位性质你妹啊！
+															option(value='D004') 上市公司
 
-															option(value='') 单位性质你妹啊！
+															option(value='D005') 股份制企业
 
-															option(value='') 单位性质你妹啊！
+															option(value='D006') 外商独资/中外合资
+
+															option(value='D007') 民营/私营
+
+															option(value='D008') 个体
 
 														div(class='left border_box hide ___error __sltUnitAttribute')
 
@@ -669,7 +633,7 @@ block content
 
 													div(class='field border_box')
 
-														select(id='sltCurrentUnitEntryDateYear', class='left sltCurrentUnitEntryDateYear', name='sltCurrentUnitEntryDateYear', data-selected='', style='width: 100px !important; margin-right: 10px;', title='请选择您的现单位入职时间（年）')
+														select(id='sltCurrentUnitEntryDateYear', class='left sltCurrentUnitEntryDateYear', name='sltCurrentUnitEntryDateYear', data-selected='1940', style='width: 100px !important; margin-right: 10px;')
 
 															option(value='') 请选择
 
@@ -825,7 +789,7 @@ block content
 
 														span(class='left', style='margin-right: 10px;') 年
 
-														select(id='sltCurrentUnitEntryDateMonth', class='left sltCurrentUnitEntryDateMonth', data-selected='', name='sltCurrentUnitEntryDateMonth', style='width: 100px !important; margin-right: 10px;', title='请选择您的现单位入职时间（月）')
+														select(id='sltCurrentUnitEntryDateMonth', class='left sltCurrentUnitEntryDateMonth', data-selected='1', name='sltCurrentUnitEntryDateMonth', style='width: 100px !important; margin-right: 10px;')
 
 															option(value='') 请选择
 
@@ -874,21 +838,17 @@ block content
 
 													div(class='field border_box')
 
-														select(id='sltWorkLimit', class='sltWorkLimit', name='sltWorkLimit', data-selected='', title='请选择您的总工作年限')
+														select(id='sltWorkLimit', class='sltWorkLimit', name='sltWorkLimit', data-selected='GZN2')
 
 															option(value='') 请选择
 
-															option(value='') 总工作年限你妹啊！
+															option(value='GZN1') 1年以下
 
-															option(value='') 总工作年限你妹啊！
+															option(value='GZN2') 1年至3年
 
-															option(value='') 总工作年限你妹啊！
+															option(value='GZN3') 3年至5年
 
-															option(value='') 总工作年限你妹啊！
-
-															option(value='') 总工作年限你妹啊！
-
-															option(value='') 总工作年限你妹啊！
+															option(value='GZN4') 5年以上
 
 														div(class='left border_box hide ___error __sltWorkLimit')
 
@@ -904,7 +864,7 @@ block content
 
 													div(class='field border_box has-border')
 
-														input(id='iptEntryDepartment', class='txt-ipt iptEntryDepartment', name='iptEntryDepartment', type='text', value='去你妈的！', title='请填写您的入职部门')
+														input(id='iptEntryDepartment', class='txt-ipt iptEntryDepartment', name='iptEntryDepartment', type='text', value='去你妈的！')
 
 														div(class='left border_box hide ___error __iptEntryDepartment')
 
@@ -920,7 +880,7 @@ block content
 
 													div(class='field border_box has-border')
 
-														input(id='iptJobTitle', class='txt-ipt iptJobTitle', name='iptJobTitle', type='text', value='去你妈的！', title='请填写您的入职职位/职务')
+														input(id='iptJobTitle', class='txt-ipt iptJobTitle', name='iptJobTitle', type='text', value='去你妈的！')
 
 														div(class='left border_box hide ___error __iptJobTitle')
 
@@ -938,13 +898,13 @@ block content
 
 														div(class='left field border_box has-border', style='width: 50px;')
 
-															input(id='iptZeraCode', class='txt-ipt iptZeraCode text-center', style='width: 40px;', name='iptZeraCode', type='text', value='021', title='请填写您的入职职位/职务')
+															input(id='iptZeraCode', class='txt-ipt iptZeraCode text-center', style='width: 40px;', name='iptZeraCode', type='text', value='021')
 
 														i(class='left', style='width: 10px; height: 1px; margin: 0 10px; margin-top: 15px; background-color: #333;') &nbsp;
 
 														div(class='right field border_box has-border _xxxxx', style='width: 190px;')
 
-															input(id='iptCoTel', class='txt-ipt iptCoTel text-center', style='width: 180px', name='iptCoTel', type='text', value='88888888', title='请填写您的入职职位/职务')
+															input(id='iptCoTel', class='txt-ipt iptCoTel text-center', style='width: 180px', name='iptCoTel', type='text', value='88888888')
 
 														div(class='relative left border_box hide ___error')
 
@@ -996,11 +956,6 @@ block content
 
 												li(class='left __content __9') 88888888
 
-
-
-
-							
-
 							// Section · Credit Info · >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 							
 							li(class='fullWidth _section sec-credit-info')
@@ -1017,7 +972,7 @@ block content
 
 									li
 
-										form(id='frmCreditInfo', class='fullWidth minHeight-30 _frm frmCreditInfo', name='frmCreditInfo', action='//114.215.194.232:8180/formServlet', data-geography='//114.215.194.232:8180/provinceServlet', method='post', data-frmuuid='3', data-appno='21222324252627282930', data-userid='FUCKING NICE BUTT!')
+										form(id='frmCreditInfo', class='fullWidth minHeight-30 _frm frmCreditInfo', name='frmCreditInfo', action='//192.168.0.181:8080/fenqimall/CollarFormServlet', data-geography='//114.215.194.232:8180/provinceServlet', method='post', data-frmuuid='3', data-appno='21222324252627282930', data-userid='FUCKING NICE BUTT!')
 
 											ul(class='block fullWidth clearfix')
 
@@ -1063,8 +1018,6 @@ block content
 
 												li(class='left __lbl', title='请填写您的当前房租月供(元)')
 
-													span *
-
 													| 房租月供(元)：
 
 												li(class='left __content')
@@ -1078,8 +1031,6 @@ block content
 
 
 												li(class='left __lbl', title='请填写您的当前贷款总额(元)')
-
-													span *
 
 													| 贷款总额(元)：
 
@@ -1095,8 +1046,6 @@ block content
 
 												li(class='left __lbl', title='请填写您的当前贷款数量(笔)')
 
-													span *
-
 													| 贷款数量(笔)：
 
 												li(class='left __content')
@@ -1110,8 +1059,6 @@ block content
 
 
 												li(class='left __lbl', title='请填写您的当前贷款月供(元)')
-
-													span *
 
 													| 贷款月供(元)：
 
@@ -1127,8 +1074,6 @@ block content
 
 												li(class='left __lbl', title='请填写您的当前信用卡数量(张)')
 
-													span *
-
 													| 信用卡数量(张)：
 
 												li(class='left __content')
@@ -1143,8 +1088,6 @@ block content
 
 												li(class='left __lbl', style='font-size: 12px;', title='请填写您的当前信用卡最高额度(元)')
 
-													span *
-
 													| 信用卡最高额度(元)：
 
 												li(class='left __content')
@@ -1157,8 +1100,6 @@ block content
 
 
 												li(class='left __lbl', style='font-size: 12px;', title='请填写您的当前信用卡总额度(元)')
-
-													span *
 
 													| 信用卡总额度(元)：
 
@@ -1180,44 +1121,39 @@ block content
 
 												li(class='left __lbl') 当前月收入(元)：
 
-												li(class='left __content __1') 全日制
+												li(class='left __content __1') 
 
 												li(class='left __lbl') 月消费(元)：
 
-												li(class='left __content __2') 全日制
+												li(class='left __content __2') 
 
 												li(class='left __lbl') 房租月供(元)：
 
-												li(class='left __content __3') 本科
+												li(class='left __content __3') 
 
 												li(class='left __lbl') 贷款总额(元)：
 
-												li(class='left __content __4') 2013年9月
+												li(class='left __content __4') 
 
 												li(class='left __lbl') 贷款数量(笔)：
 
-												li(class='left __content __5') 大一
+												li(class='left __content __5') 
 
 												li(class='left __lbl') 贷款月供(元)：
 
-												li(class='left __content __6') 2012012218
+												li(class='left __content __6') 
 
 												li(class='left __lbl') 信用卡数量(张)：
 
-												li(class='left __content __7') 计算机系
+												li(class='left __content __7') 
 
 												li(class='left __lbl') 信用卡最高额度(元)：
 
-												li(class='left __content __8') 计算机
+												li(class='left __content __8') 
 
 												li(class='left __lbl') 信用卡总额度(元)：
 
-												li(class='left __content __9') 88888888
-
-
-
-
-							
+												li(class='left __content __9') 
 
 							// Section · Contact Info · >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 							
@@ -1235,7 +1171,7 @@ block content
 
 									li
 
-										form(id='frmContactInfo', class='fullWidth minHeight-30 _frm frmContactInfo', name='frmContactInfo', action='//114.215.194.232:8180/formServlet', data-geography='//114.215.194.232:8180/provinceServlet', method='post', data-frmuuid='4', data-appno='21222324252627282930', data-userid='FUCKING STUPID FUCKER!')
+										form(id='frmContactInfo', class='fullWidth minHeight-30 _frm frmContactInfo', name='frmContactInfo', action='//192.168.0.181:8080/fenqimall/CollarFormServlet', data-geography='//114.215.194.232:8180/provinceServlet', method='post', data-frmuuid='4', data-appno='21222324252627282930', data-userid='FUCKING STUPID FUCKER!')
 
 											ul(class='block fullWidth clearfix')
 
@@ -1255,19 +1191,19 @@ block content
 
 													div(class='field border_box __fullWidth')
 
-														select(id='sltAddressPermanentResidenceProvince', class='left sltAddressPermanentResidenceProvince', name='sltAddressPermanentResidenceProvince', data-selected='', style='width: 130px !important; margin-right: 10px;')
+														select(id='sltAddressPermanentResidenceProvince', class='left sltAddressPermanentResidenceProvince', name='sltAddressPermanentResidenceProvince', data-selected='320000', style='width: 130px !important; margin-right: 10px;')
 
 															option(value='') 请选择
 
 														span(class='left', style='margin-right: 10px;') 省
 
-														select(id='sltAddressPermanentResidenceCity', class='left sltAddressPermanentResidenceCity', name='sltAddressPermanentResidenceCity', data-selected='', style='width: 130px !important; margin-right: 10px;')
+														select(id='sltAddressPermanentResidenceCity', class='left sltAddressPermanentResidenceCity', name='sltAddressPermanentResidenceCity', data-selected='320100', style='width: 130px !important; margin-right: 10px;')
 
 															option(value='') 请先选择省
 
 														span(class='left', style='margin-right: 10px;') 市
 
-														select(id='sltAddressPermanentResidenceDistrict', class='left sltAddressPermanentResidenceDistrict', name='sltAddressPermanentResidenceDistrict', data-selected='', style='width: 130px !important; margin-right: 10px;')
+														select(id='sltAddressPermanentResidenceDistrict', class='left sltAddressPermanentResidenceDistrict', name='sltAddressPermanentResidenceDistrict', data-selected='320125', style='width: 130px !important; margin-right: 10px;')
 
 															option(value='') 请先选择市
 
@@ -1311,19 +1247,19 @@ block content
 
 													div(class='field border_box __fullWidth')
 
-														select(id='sltAddressCoProvince', class='left sltAddressCoProvince', name='sltAddressCoProvince', data-selected='110000', style='width: 130px !important; margin-right: 10px;')
+														select(id='sltAddressCoProvince', class='left sltAddressCoProvince', name='sltAddressCoProvince', data-selected='320000', style='width: 130px !important; margin-right: 10px;')
 
 															option(value='') 请选择
 
 														span(class='left', style='margin-right: 10px;') 省
 
-														select(id='sltAddressCoCity', class='left sltAddressCoCity', name='sltAddressCoCity', data-selected='110100', style='width: 130px !important; margin-right: 10px;')
+														select(id='sltAddressCoCity', class='left sltAddressCoCity', name='sltAddressCoCity', data-selected='320100', style='width: 130px !important; margin-right: 10px;')
 
 															option(value='') 请先选择省
 
 														span(class='left', style='margin-right: 10px;') 市
 
-														select(id='sltAddressCoDistrict', class='left sltAddressCoDistrict', name='sltAddressCoDistrict', data-selected='110101', style='width: 130px !important; margin-right: 10px;')
+														select(id='sltAddressCoDistrict', class='left sltAddressCoDistrict', name='sltAddressCoDistrict', data-selected='320125', style='width: 130px !important; margin-right: 10px;')
 
 															option(value='') 请先选择市
 
@@ -1367,19 +1303,19 @@ block content
 
 													div(class='field border_box __fullWidth')
 
-														select(id='sltAddressHomeProvince', class='left sltAddressHomeProvince', name='sltAddressHomeProvince', data-selected='110000', style='width: 130px !important; margin-right: 10px;')
+														select(id='sltAddressHomeProvince', class='left sltAddressHomeProvince', name='sltAddressHomeProvince', data-selected='320000', style='width: 130px !important; margin-right: 10px;')
 
 															option(value='') 请选择
 
 														span(class='left', style='margin-right: 10px;') 省
 
-														select(id='sltAddressHomeCity', class='left sltAddressHomeCity', name='sltAddressHomeCity', data-selected='110100', style='width: 130px !important; margin-right: 10px;')
+														select(id='sltAddressHomeCity', class='left sltAddressHomeCity', name='sltAddressHomeCity', data-selected='320100', style='width: 130px !important; margin-right: 10px;')
 
 															option(value='') 请先选择省
 
 														span(class='left', style='margin-right: 10px;') 市
 
-														select(id='sltAddressHomeDistrict', class='left sltAddressHomeDistrict', name='sltAddressHomeDistrict', data-selected='110101', style='width: 130px !important; margin-right: 10px;')
+														select(id='sltAddressHomeDistrict', class='left sltAddressHomeDistrict', name='sltAddressHomeDistrict', data-selected='320125', style='width: 130px !important; margin-right: 10px;')
 
 															option(value='') 请先选择市
 
@@ -1423,19 +1359,19 @@ block content
 
 													div(class='field border_box __fullWidth')
 
-														select(id='sltAddressNowProvince', class='left sltAddressNowProvince', name='sltAddressNowProvince', data-selected='110000', style='width: 130px !important; margin-right: 10px;')
+														select(id='sltAddressNowProvince', class='left sltAddressNowProvince', name='sltAddressNowProvince', data-selected='320000', style='width: 130px !important; margin-right: 10px;')
 
 															option(value='') 请选择
 
 														span(class='left', style='margin-right: 10px;') 省
 
-														select(id='sltAddressNowCity', class='left sltAddressNowCity', name='sltAddressNowCity', data-selected='110100', style='width: 130px !important; margin-right: 10px;')
+														select(id='sltAddressNowCity', class='left sltAddressNowCity', name='sltAddressNowCity', data-selected='320100', style='width: 130px !important; margin-right: 10px;')
 
 															option(value='') 请先选择省
 
 														span(class='left', style='margin-right: 10px;') 市
 
-														select(id='sltAddressNowDistrict', class='left sltAddressNowDistrict', name='sltAddressNowDistrict', data-selected='110101', style='width: 130px !important; margin-right: 10px;')
+														select(id='sltAddressNowDistrict', class='left sltAddressNowDistrict', name='sltAddressNowDistrict', data-selected='320125', style='width: 130px !important; margin-right: 10px;')
 
 															option(value='') 请先选择市
 
@@ -1487,11 +1423,6 @@ block content
 
 												li(class='left __content __fullWidth textOverflow __4') @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-
-
-
-							
-
 							// Section · Linkman Info · >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 							
 							li(class='fullWidth _section sec-linkman-info')
@@ -1508,7 +1439,7 @@ block content
 
 									li
 
-										form(id='frmLinkmanInfo', class='fullWidth minHeight-30 _frm frmLinkmanInfo', name='frmLinkmanInfo', action='//114.215.194.232:8180/formServlet', data-geography='//114.215.194.232:8180/provinceServlet', method='post', data-frmuuid='5', data-appno='21222324252627282930', data-userid='FUCKING STUPID FUCKER!')
+										form(id='frmLinkmanInfo', class='fullWidth minHeight-30 _frm frmLinkmanInfo', name='frmLinkmanInfo', action='//192.168.0.181:8080/fenqimall/CollarFormServlet', data-geography='//114.215.194.232:8180/provinceServlet', method='post', data-frmuuid='5', data-appno='21222324252627282930', data-userid='FUCKING STUPID FUCKER!')
 
 											ul(class='block fullWidth clearfix')
 
@@ -1526,7 +1457,7 @@ block content
 
 													div(class='field border_box has-border')
 
-														input(id='iptImmediateFamilyName', class='txt-ipt iptImmediateFamilyName', name='iptImmediateFamilyName', type='text', value='联系人信息', title='')
+														input(id='iptImmediateFamilyName', class='txt-ipt iptImmediateFamilyName', name='iptImmediateFamilyName', type='text', tabIndex='1', value='联系人信息', title='')
 
 														div(class='left border_box hide ___error __iptImmediateFamilyName')
 
@@ -1554,7 +1485,7 @@ block content
 
 													div(class='field border_box')
 
-														select(id='sltImmediateFamilyRelation', class='sltImmediateFamilyRelation', name='sltImmediateFamilyRelation', data-selected='父亲')
+														select(id='sltImmediateFamilyRelation', class='sltImmediateFamilyRelation', name='sltImmediateFamilyRelation', tabIndex='2', data-selected='父亲')
 
 															option(value='父亲') 父亲
 
@@ -1730,21 +1661,7 @@ block content
 
 												li(class='left __content') ++、++++、++++++、+++++、+++
 
-
-
-
-
-
 						div(class='absolute text-left fullWidth minHeight-50 fucking-footer') &copy; 2013-2014 江西汇通金融信息服务有限公司 版权所有 赣ICP备13002945
-
-
-
-
-							
-
-							
-
-							
 
 block private-body-script
 
@@ -1764,4 +1681,4 @@ block private-body-script
 //
 //* Creation Date: 2014.06.06 15:41 ( Tony ).
 //
-//* Last Update: 2014.06.06 16:21 ( Tony ).
+//* Last Update: 2014.06.11 15:46 ( Tony ).

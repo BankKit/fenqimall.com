@@ -23,7 +23,7 @@
  * 
  * Creation Date: 2014.06.06 16:16 ( Tony ).
  * 
- * Last Update: 2014.06.06 16:20 ( Tony ).    ...//TODO: Update the 'Last Update'. Hello World!
+ * Last Update: 2014.06.11 15:44 ( Tony ).    ...//TODO: Update the 'Last Update'. Hello World!
  * 
  * Music ( Custom ): Countdown (feat. Makj).mp3    ...//TODO: If you are listenning some music, just write the name of songs.
  * 
@@ -84,11 +84,7 @@
 			
 			fns = {
 				
-				config: {
-					
-					
-					
-				},
+				config: {},
 				
 				init: function (settings) {
 					
@@ -111,6 +107,372 @@
 					scroller.excute($(':root'));
 					
 					$('._here .sec-cntent').slideDown();
+
+					// Default action for whole selects in whole sections.
+
+					var _slt = $('select');
+					
+					$.each(_slt, function (idx, obj) {
+						
+						var _this = $(this),
+							
+							_thisSelected = _this.data('selected');
+						
+						if (_thisSelected !== '') {
+							
+							_this.children('option[value='+ _thisSelected +']').prop('selected', true);
+							
+						}
+						
+					});
+
+					// Default action for whole selects in contact section.
+
+					$.ajax({
+
+						crossDomain: true,
+
+						url: $.trim($('#frmContactInfo').data('geography')),
+
+						data: {
+
+							type: '省'
+
+						},
+
+						dataType: 'json',
+
+						timeout: 120000,
+
+						success: function (data, textStatus, jqXHR) {
+
+							var _html;
+
+							$.each(data, function (idx, obj) {
+
+								_html = $('<option/>');
+
+								_html.val(obj.provinceId).text(obj.province);
+
+								_html.appendTo($('#sltAddressPermanentResidenceProvince, #sltAddressCoProvince, #sltAddressHomeProvince, #sltAddressNowProvince'));
+
+							});
+
+							$.each($('#sltAddressPermanentResidenceProvince, #sltAddressCoProvince, #sltAddressHomeProvince, #sltAddressNowProvince'), function (idx, obj) {
+
+								var _this = $(this),
+									
+									_thisSelected = _this.data('selected');
+
+								if (_thisSelected !== '') {
+
+									_this.children('option[value='+ _thisSelected +']').prop('selected', true);
+
+									var _city = _this.parent().find('select').filter(':eq(1)');
+
+									if (_city.data('selected') !== '') {
+
+										$.ajax({
+
+											crossDomain: true,
+
+											url: $.trim($('#frmContactInfo').data('geography')),
+
+											data: {
+
+												type: '市',
+
+												uuid: _thisSelected
+
+											},
+
+											dataType: 'json',
+
+											timeout: 120000,
+
+											success: function (data, textStatus, jqXHR) {
+
+												$.each(data, function (idx, obj) {
+
+													_html = $('<option/>');
+
+													_html.val(obj.cityId).text(obj.city);
+
+													_city.append(_html);
+
+												});
+
+												_city.children('option[value='+ _city.data('selected') +']').prop('selected', true);
+
+												var _district = _this.parent().find('select').filter(':eq(2)');
+
+												if (_district.data('selected') !== '') {
+
+													$.ajax({
+
+														crossDomain: true,
+
+														url: $.trim($('#frmContactInfo').data('geography')),
+
+														data: {
+
+															type: '区',
+
+															uuid: _city.data('selected')
+
+														},
+
+														dataType: 'json',
+
+														timeout: 120000,
+
+														success: function (data, textStatus, jqXHR) {
+
+															var _html;
+
+															$.each(data, function (idx, obj) {
+
+																_html = $('<option/>');
+
+																_html.val(obj.areaId).text(obj.area);
+
+																_district.append(_html);
+
+															});
+
+															_district.children('option[value='+ _district.data('selected') +']').prop('selected', true);
+
+														}
+
+													});
+
+												}
+
+											}
+
+										});
+
+									}
+
+								}
+
+							});
+
+						}
+
+					});
+
+					// 'Change' action for 'Province' selects in contact section.
+
+					$('#sltAddressPermanentResidenceProvince, #sltAddressCoProvince, #sltAddressHomeProvince, #sltAddressNowProvince').on('change', function () {
+
+						var _this = $(this);
+
+						switch (_this.attr('id')) {
+
+							case 'sltAddressPermanentResidenceProvince':
+
+								$('#sltAddressPermanentResidenceCity').children().remove();
+
+								break;
+
+							case 'sltAddressCoProvince':
+
+								$('#sltAddressCoCity').children().remove();
+
+								break;
+
+							case 'sltAddressHomeProvince':
+
+								$('#sltAddressHomeCity').children().remove();
+
+								break;
+
+							case 'sltAddressNowProvince':
+
+								$('#sltAddressNowCity').children().remove();
+
+								break;
+
+							default:
+
+								break;
+
+						}
+
+						$.ajax({
+
+							crossDomain: true,
+
+							url: $.trim($('#frmContactInfo').data('geography')),
+
+							data: {
+
+								type: '市',
+
+								uuid: _this.find('option:selected').val()
+
+							},
+
+							dataType: 'json',
+
+							timeout: 120000,
+
+							success: function (data, textStatus, jqXHR) {
+
+								var _html;
+
+								$.each(data, function (idx, obj) {
+
+									_html = $('<option/>');
+
+									_html.val(obj.cityId).text(obj.city);
+
+									switch (_this.attr('id')) {
+
+										case 'sltAddressPermanentResidenceProvince':
+
+											$('#sltAddressPermanentResidenceCity').append(_html);
+
+											break;
+
+										case 'sltAddressCoProvince':
+
+											$('#sltAddressCoCity').append(_html);
+
+											break;
+
+										case 'sltAddressHomeProvince':
+
+											$('#sltAddressHomeCity').append(_html);
+
+											break;
+
+										case 'sltAddressNowProvince':
+
+											$('#sltAddressNowCity').append(_html);
+
+											break;
+
+										default:
+
+											break;
+
+									}
+
+								});
+
+							}
+
+						});
+
+					});
+
+					// 'Change' action for 'City' selects in contact section.
+
+					$('#sltAddressPermanentResidenceCity, #sltAddressCoCity, #sltAddressHomeCity, #sltAddressNowCity').on('change', function () {
+
+						var _this = $(this);
+
+						switch (_this.attr('id')) {
+
+							case 'sltAddressPermanentResidenceCity':
+
+								$('#sltAddressPermanentResidenceDistrict').children().remove();
+
+								break;
+
+							case 'sltAddressCoCity':
+
+								$('#sltAddressCoDistrict').children().remove();
+
+								break;
+
+							case 'sltAddressHomeCity':
+
+								$('#sltAddressHomeDistrict').children().remove();
+
+								break;
+
+							case 'sltAddressNowCity':
+
+								$('#sltAddressNowDistrict').children().remove();
+
+								break;
+
+							default:
+
+								break;
+
+						}
+
+						$.ajax({
+
+							crossDomain: true,
+
+							url: $.trim($('#frmContactInfo').data('geography')),
+
+							data: {
+
+								type: '区',
+
+								uuid: _this.find('option:selected').val()
+
+							},
+
+							dataType: 'json',
+
+							timeout: 120000,
+
+							success: function (data, textStatus, jqXHR) {
+
+								var _html;
+
+								$.each(data, function (idx, obj) {
+
+									_html = $('<option/>');
+
+									_html.val(obj.areaId).text(obj.area);
+
+									switch (_this.attr('id')) {
+
+										case 'sltAddressPermanentResidenceCity':
+
+											$('#sltAddressPermanentResidenceDistrict').append(_html);
+
+											break;
+
+										case 'sltAddressCoCity':
+
+											$('#sltAddressCoDistrict').append(_html);
+
+											break;
+
+										case 'sltAddressHomeCity':
+
+											$('#sltAddressHomeDistrict').append(_html);
+
+											break;
+
+										case 'sltAddressNowCity':
+
+											$('#sltAddressNowDistrict').append(_html);
+
+											break;
+
+										default:
+
+											break;
+
+									}
+
+								});
+
+							}
+
+						});
+
+					});
 					
 				},
 				
@@ -232,7 +594,19 @@
 								errorElement: 'div',
 								
 								errorPlacement: function (error, element) {
+
+									if (element.attr('id') == 'iptZeraCode') {
+
+										error.appendTo(element.parent().parent().find('.__' + element.attr('id')));
+
+									}
 									
+									if (element.attr('id') == 'iptCoTel') {
+
+										error.appendTo(element.parent().parent().find('.__' + element.attr('id')));
+
+									}
+
 									error.appendTo(element.parent().find('.__' + element.attr('id')));
 									
 								}
@@ -251,19 +625,23 @@
 						
 						this.config.addDefaults();
 						
-						// this.frmSchoolInfoValior();
+						this.frmPersonalInfoValior();
 						
-						// this.frmContactInfoValior();
+						this.frmUnitInfoValior();
 						
-						// this.frmLinkmanInfoValior();
+						this.frmCreditInfoValior();
+
+						this.frmContactInfoValior();
+
+						this.frmLinkmanInfoValior();
 						
-						// this.toEdit();
+						this.toEdit();
 						
 					},
 					
-					frmSchoolInfoValior: function () {
+					frmPersonalInfoValior: function () {
 						
-						var frmSchoolInfoValior = $('#frmSchoolInfo').validate({
+						var frmPersonalInfoValior = $('#frmPersonalInfo').validate({
 							
 							rules: {
 								
@@ -273,7 +651,7 @@
 									
 								},
 								
-								iptStuId: {
+								sltGraduationDateYear: {
 									
 									required: true,
 									
@@ -281,19 +659,7 @@
 									
 								},
 								
-								iptStuDepartment: {
-									
-									required: true
-									
-								},
-								
-								iptStuMajor: {
-									
-									required: true
-									
-								},
-								
-								sltEducationalSystem: {
+								sltGraduationDateMonth: {
 									
 									required: true
 									
@@ -305,25 +671,19 @@
 									
 								},
 								
-								sltAdmissionDateYear: {
+								sltEducationalSystem: {
 									
 									required: true
 									
 								},
 								
-								sltAdmissionDateMonth: {
+								sltMatrimonySystem: {
 									
 									required: true
 									
 								},
 								
-								sltGrade: {
-									
-									required: true
-									
-								},
-								
-								sltStuType: {
+								sltHousingSystem: {
 									
 									required: true
 									
@@ -335,27 +695,21 @@
 								
 								event.preventDefault();
 								
-								fns.validation.submitHandle(frmSchoolInfoValior, form, {
+								fns.validation.submitHandle(frmPersonalInfoValior, form, {
 									
 									iptSchoolName: $.trim($('#iptSchoolName').val()),
 									
-									iptStuId: $.trim($('#iptStuId').val()),
+									sltGraduationDateYear: $.trim($('#sltGraduationDateYear option:selected').val()),
 									
-									iptStuDepartment: $.trim($('#iptStuDepartment').val()),
-									
-									iptStuMajor: $.trim($('#iptStuMajor').val()),
-									
-									sltEducationalSystem: $.trim($('#sltEducationalSystem option:selected').val()),
+									sltGraduationDateMonth: $.trim($('#sltGraduationDateMonth option:selected').val()),
 									
 									sltEducationBackground: $.trim($('#sltEducationBackground option:selected').val()),
 									
-									sltAdmissionDateYear: $.trim($('#sltAdmissionDateYear option:selected').val()),
+									sltEducationalSystem: $.trim($('#sltEducationalSystem option:selected').val()),
 									
-									sltAdmissionDateMonth: $.trim($('#sltAdmissionDateMonth option:selected').val()),
+									sltMatrimonySystem: $.trim($('#sltMatrimonySystem option:selected').val()),
 									
-									sltGrade: $.trim($('#sltGrade option:selected').val()),
-									
-									sltStuType: $.trim($('#sltStuType option:selected').val())
+									sltHousingSystem: $.trim($('#sltHousingSystem option:selected').val())
 									
 								}, function () {
 									
@@ -363,21 +717,15 @@
 									
 									panel.find('.__1').text($.trim($('#iptSchoolName').val()));
 									
-									panel.find('.__2').text($.trim($('#sltEducationalSystem').val()));
+									panel.find('.__2').text($.trim($('#sltGraduationDateYear option:selected').val()) + '年' + $.trim($('#sltGraduationDateMonth option:selected').val()) + '月');
 									
 									panel.find('.__3').text($.trim($('#sltEducationBackground option:selected').text()));
 									
-									panel.find('.__4').text($.trim($('#sltAdmissionDateYear').val()) + '年' + $.trim($('#sltAdmissionDateMonth').val()) + '月');
+									panel.find('.__4').text($.trim($('#sltEducationalSystem option:selected').val()));
 									
-									panel.find('.__5').text($.trim($('#sltGrade option:selected').text()));
+									panel.find('.__5').text($.trim($('#sltMatrimonySystem option:selected').text()));
 									
-									panel.find('.__6').text($.trim($('#iptStuId').val()));
-									
-									panel.find('.__7').text($.trim($('#iptStuDepartment').val()));
-									
-									panel.find('.__8').text($.trim($('#iptStuMajor').val()));
-									
-									panel.find('.__9').text($.trim($('#sltStuType option:selected').text()));
+									panel.find('.__6').text($.trim($('#sltHousingSystem option:selected').text()));
 									
 								});
 								
@@ -387,82 +735,314 @@
 						
 					},
 					
-					frmContactInfoValior: function () {
+					frmUnitInfoValior: function () {
 						
+						var frmUnitInfoValior = $('#frmUnitInfo').validate({
+							
+							rules: {
+								
+								iptCurrentUnitName: {
+									
+									required: true
+									
+								},
+								
+								sltBusinessKind: {
+									
+									required: true
+									
+								},
+								
+								iptBadgeID: {
+									
+									required: true
+									
+								},
+								
+								sltUnitAttribute: {
+									
+									required: true
+									
+								},
+								
+								sltCurrentUnitEntryDateYear: {
+									
+									required: true
+									
+								},
+								
+								sltCurrentUnitEntryDateMonth: {
+									
+									required: true
+									
+								},
+								
+								sltWorkLimit: {
+									
+									required: true
+									
+								},
+								
+								iptEntryDepartment: {
+									
+									required: true
+									
+								},
+								
+								iptJobTitle: {
+									
+									required: true
+									
+								},
+								
+								iptZeraCode: {
+									
+									required: true
+									
+								},
+								
+								iptCoTel: {
+									
+									required: true
+									
+								}
+								
+							},
+							
+							submitHandler: function (form, event) {
+								
+								event.preventDefault();
+								
+								fns.validation.submitHandle(frmUnitInfoValior, form, {
+									
+									iptCurrentUnitName: $.trim($('#iptCurrentUnitName').val()),
+									
+									sltBusinessKind: $.trim($('#sltBusinessKind option:selected').val()),
+									
+									iptBadgeID: $.trim($('#iptBadgeID').val()),
+									
+									sltUnitAttribute: $.trim($('#sltUnitAttribute option:selected').val()),
+									
+									sltCurrentUnitEntryDateYear: $.trim($('#sltCurrentUnitEntryDateYear option:selected').val()),
+									
+									sltCurrentUnitEntryDateMonth: $.trim($('#sltCurrentUnitEntryDateMonth option:selected').val()),
+									
+									sltWorkLimit: $.trim($('#sltWorkLimit option:selected').val()),
+									
+									iptEntryDepartment: $.trim($('#iptEntryDepartment').val()),
+									
+									iptJobTitle: $.trim($('#iptJobTitle').val()),
+									
+									iptZeraCode: $.trim($('#iptZeraCode').val()),
+									
+									iptCoTel: $.trim($('#iptCoTel').val())
+									
+								}, function () {
+									
+									var panel = $(form).next();
+									
+									panel.find('.__1').text( $.trim($('#iptCurrentUnitName').val()) );
+									
+									panel.find('.__2').text( $.trim($('#sltBusinessKind option:selected').text()) );
+									
+									panel.find('.__3').text( $.trim($('#iptBadgeID').val()) );
+									
+									panel.find('.__4').text( $.trim($('#sltUnitAttribute option:selected').text()) );
+
+									panel.find('.__5').text( $.trim($('#sltCurrentUnitEntryDateYear option:selected').text()) + '年' + $.trim($('#sltCurrentUnitEntryDateMonth option:selected').text()) + '月');
+									
+									panel.find('.__6').text( $.trim($('#sltWorkLimit option:selected').text()) );
+									
+									panel.find('.__7').text( $.trim($('#iptEntryDepartment').val()) );
+									
+									panel.find('.__8').text( $.trim($('#iptJobTitle').val()) );
+									
+									panel.find('.__9').text( $.trim($('#iptZeraCode').val()) + '-' + $.trim($('#iptCoTel').val()) );
+									
+								});
+								
+							}
+							
+						});
+						
+					},
+					
+					frmCreditInfoValior: function () {
+						
+						var frmCreditInfoValior = $('#frmCreditInfo').validate({
+							
+							rules: {
+								
+								iptCurrentIncome: {
+									
+									required: true
+									
+								},
+								
+								iptCurrentConsumption: {
+									
+									required: true,
+									
+									notEqual: '#iptImmediateFamilyName'
+									
+								}
+								
+							},
+							
+							submitHandler: function (form, event) {
+								
+								event.preventDefault();
+								
+								fns.validation.submitHandle(frmCreditInfoValior, form, {
+									
+									iptCurrentIncome: $.trim($('#iptCurrentIncome').val()),
+									
+									iptCurrentConsumption: $.trim($('#iptCurrentConsumption').val()),
+
+									iptCurrentHouseRent: $.trim($('#iptCurrentHouseRent').val()),
+
+									iptCurrentLoan: $.trim($('#iptCurrentLoan').val()),
+
+									iptCurrentLoanCount: $.trim($('#iptCurrentLoanCount').val()),
+
+									iptCurrentLoanPayments: $.trim($('#iptCurrentLoanPayments').val()),
+
+									iptCurrentCreditCardCount: $.trim($('#iptCurrentCreditCardCount').val()),
+
+									iptCurrentCreditCardLimit: $.trim($('#iptCurrentCreditCardLimit').val()),
+
+									iptCurrentCreditCardLimitTotal: $.trim($('#iptCurrentCreditCardLimitTotal').val())
+									
+								}, function () {
+									
+									var panel = $(form).next();
+									
+									panel.find('.__1').text( $.trim($('#iptCurrentIncome').val()) );
+									
+									panel.find('.__2').text( $.trim($('#iptCurrentConsumption').val()) );
+									
+									panel.find('.__3').text( $.trim($('#iptCurrentHouseRent').val()) );
+									
+									panel.find('.__4').text( $.trim($('#iptCurrentLoan').val()) );
+
+									panel.find('.__5').text( $.trim($('#iptCurrentLoanCount').val()) );
+									
+									panel.find('.__6').text( $.trim($('#iptCurrentLoanPayments').val()) );
+									
+									panel.find('.__7').text( $.trim($('#iptCurrentCreditCardCount').val()) );
+									
+									panel.find('.__8').text( $.trim($('#iptCurrentCreditCardLimit').val()) );
+									
+									panel.find('.__9').text( $.trim($('#iptCurrentCreditCardLimitTotal').val()) );
+									
+								});
+								
+							}
+							
+						});
+						
+					},
+
+					frmContactInfoValior: function () {
+
 						var frmContactInfoValior = $('#frmContactInfo').validate({
 							
 							rules: {
 								
-								sltAddressSchoolProvince: {
+								sltAddressPermanentResidenceProvince: {
 									
 									required: true
 									
 								},
 								
-								sltAddressSchoolCity: {
+								sltAddressPermanentResidenceCity: {
 									
 									required: true
 									
 								},
-								
-								sltAddressSchoolDistrict: {
+
+								sltAddressPermanentResidenceDistrict: {
 									
 									required: true
-									
+
 								},
-								
-								iptSchoolAddressDetails: {
+
+								iptPermanentResidenceAddressDetails: {
 									
 									required: true
-									
+
 								},
-								
+
+								sltAddressCoProvince: {
+									
+									required: true
+
+								},
+
+								sltAddressCoCity: {
+									
+									required: true
+
+								},
+
+								sltAddressCoDistrict: {
+									
+									required: true
+
+								},
+
+								iptCoAddressDetails: {
+									
+									required: true
+
+								},
+
 								sltAddressHomeProvince: {
 									
 									required: true
-									
+
 								},
-								
+
 								sltAddressHomeCity: {
 									
 									required: true
-									
+
 								},
-								
+
 								sltAddressHomeDistrict: {
 									
 									required: true
-									
+
 								},
-								
+
 								iptHomeAddressDetails: {
 									
 									required: true
-									
+
 								},
-								
+
 								sltAddressNowProvince: {
 									
 									required: true
-									
+
 								},
-								
+
 								sltAddressNowCity: {
 									
 									required: true
-									
+
 								},
-								
+
 								sltAddressNowDistrict: {
 									
 									required: true
-									
+
 								},
-								
-								iptAddressNowDetails: {
+
+								iptNowAddressDetails: {
 									
 									required: true
-									
+
 								}
 								
 							},
@@ -473,14 +1053,26 @@
 								
 								fns.validation.submitHandle(frmContactInfoValior, form, {
 									
-									sltAddressSchoolProvince: $.trim($('#sltAddressSchoolProvince option:selected').val()),
+									sltAddressPermanentResidenceProvince: $.trim($('#sltAddressPermanentResidenceProvince option:selected').val()),
 									
-									sltAddressSchoolCity: $.trim($('#sltAddressSchoolCity option:selected').val()),
+									sltAddressPermanentResidenceCity: $.trim($('#sltAddressPermanentResidenceCity option:selected').val()),
 									
-									sltAddressSchoolDistrict: $.trim($('#sltAddressSchoolDistrict option:selected').val()),
+									sltAddressPermanentResidenceDistrict: $.trim($('#sltAddressPermanentResidenceDistrict option:selected').val()),
 									
-									iptSchoolAddressDetails: $.trim($('#iptSchoolAddressDetails').val()),
+									iptPermanentResidenceAddressDetails: $.trim($('#iptPermanentResidenceAddressDetails').val()),
+
+
+
+									sltAddressCoProvince: $.trim($('#sltAddressCoProvince option:selected').val()),
 									
+									sltAddressCoCity: $.trim($('#sltAddressCoCity option:selected').val()),
+									
+									sltAddressCoDistrict: $.trim($('#sltAddressCoDistrict option:selected').val()),
+									
+									iptCoAddressDetails: $.trim($('#iptCoAddressDetails').val()),
+
+
+
 									sltAddressHomeProvince: $.trim($('#sltAddressHomeProvince option:selected').val()),
 									
 									sltAddressHomeCity: $.trim($('#sltAddressHomeCity option:selected').val()),
@@ -488,37 +1080,39 @@
 									sltAddressHomeDistrict: $.trim($('#sltAddressHomeDistrict option:selected').val()),
 									
 									iptHomeAddressDetails: $.trim($('#iptHomeAddressDetails').val()),
-									
-									sltAddressNowType: $.trim($('#sltAddressNowType option:selected').val()),
-									
+
+
+
 									sltAddressNowProvince: $.trim($('#sltAddressNowProvince option:selected').val()),
 									
 									sltAddressNowCity: $.trim($('#sltAddressNowCity option:selected').val()),
 									
 									sltAddressNowDistrict: $.trim($('#sltAddressNowDistrict option:selected').val()),
 									
-									iptAddressNowDetails: $.trim($('#iptAddressNowDetails').val())
+									iptNowAddressDetails: $.trim($('#iptNowAddressDetails').val())
 									
 								}, function () {
 									
 									var panel = $(form).next();
 									
-									panel.next().find('.__1').text( $.trim($('#sltAddressSchoolProvince option:selected').text()) + $.trim($('#sltAddressSchoolCity option:selected').text()) + $.trim($('#sltAddressSchoolDistrict option:selected').text()) + $.trim($('#iptSchoolAddressDetails').val()) );
+									panel.find('.__1').text( $.trim($('#sltAddressPermanentResidenceProvince option:selected').text()) + $.trim($('#sltAddressPermanentResidenceCity option:selected').text()) + $.trim($('#sltAddressPermanentResidenceDistrict option:selected').text()) + $.trim($('#iptPermanentResidenceAddressDetails').text()) );
 									
-									panel.next().find('.__2').text( $.trim($('#sltAddressHomeProvince option:selected').text()) + $.trim($('#sltAddressHomeCity option:selected').text()) + $.trim($('#sltAddressHomeDistrict option:selected').text()) + $.trim($('#iptHomeAddressDetails').val()) );
+									panel.find('.__2').text( $.trim($('#sltAddressCoProvince option:selected').text()) + $.trim($('#sltAddressCoCity option:selected').text()) + $.trim($('#sltAddressCoDistrict option:selected').text()) + $.trim($('#iptCoAddressDetails').text()) );
 									
-									panel.next().find('.__3').text( $.trim($('#sltAddressNowProvince option:selected').text()) + $.trim($('#sltAddressNowCity option:selected').text()) + $.trim($('#sltAddressNowDistrict option:selected').text()) + $.trim($('#iptAddressNowDetails').val()) );
+									panel.find('.__3').text( $.trim($('#sltAddressHomeProvince option:selected').text()) + $.trim($('#sltAddressHomeCity option:selected').text()) + $.trim($('#sltAddressHomeDistrict option:selected').text()) + $.trim($('#iptHomeAddressDetails').text()) );
+									
+									panel.find('.__4').text( $.trim($('#sltAddressNowProvince option:selected').text()) + $.trim($('#sltAddressNowCity option:selected').text()) + $.trim($('#sltAddressNowDistrict option:selected').text()) + $.trim($('#iptNowAddressDetails').text()) );
 									
 								});
 								
 							}
 							
 						});
-						
+
 					},
-					
+
 					frmLinkmanInfoValior: function () {
-						
+
 						var frmLinkmanInfoValior = $('#frmLinkmanInfo').validate({
 							
 							rules: {
@@ -634,7 +1228,7 @@
 							}
 							
 						});
-						
+
 					},
 					
 					submitHandle: function (validationCase, form, data, fnSuccess) {
@@ -647,7 +1241,7 @@
 								
 								// Offical, fns.validation.submit(form, data, fnSuccess);
 								
-								fns.validation.success(form);
+								fns.validation.success(form, fnSuccess);
 								
 								return false;
 								
@@ -663,7 +1257,7 @@
 							
 							// Offical, fns.validation.submit(form, data, fnSuccess);
 							
-							fns.validation.success(form);
+							fns.validation.success(form, fnSuccess);
 							
 							return false;
 							
@@ -723,9 +1317,11 @@
 						
 					},
 					
-					success: function (form) {//fns.validation.success(form);
+					success: function (form, fnSuccess) {//fns.validation.success(form);
 						
 						this.accordian(form);
+						
+						fnSuccess();
 						
 					},
 					
@@ -753,49 +1349,13 @@
 								
 							}
 							
-							lastColumn = columnNext.find('.sec-cntent');
-							
 							fns.scrollToAnchor(columnNext);
 							
 						};
 						
 						if (!frm.hasClass('_final')) {
 							
-							if (frm.data('frmuuid') === 1) {
-								
-								columnDoubleNext = columnNext.next('._section');
-								
-								if (columnNext.hasClass('_checked')) {
-									
-									if (!columnDoubleNext.hasClass('_here')) {
-										
-										column.addClass('_checked');
-										
-										columnDoubleNext.addClass('_here').find('.sec-cntent').slideDown();
-										
-									} else {
-										
-										column.addClass('_checked');
-										
-										columnDoubleNext.find('.sec-cntent').slideDown();
-										
-									}
-									
-									lastColumn = columnDoubleNext.find('.sec-cntent');
-									
-									fns.scrollToAnchor(columnDoubleNext);
-									
-								} else {
-									
-									normalAccordian();
-									
-								}
-								
-							} else {
-								
-								normalAccordian();
-								
-							}
+							normalAccordian();
 							
 						} else {
 							
@@ -811,33 +1371,23 @@
 							
 							var that = $(this),
 								
-								column = that.closest('._section'),
-								
-								lastColumnSection = lastColumn.closest('._section');
+								column = that.closest('._section');
 							
 							if (!column.hasClass('_here')) {
 								
 								column.addClass('_here');
 								
 							}
-							
-							column.removeClass('_checked');
+
+							if (column.hasClass('_checked')) {
+
+								column.removeClass('_checked');
+
+							}
 							
 							fns.scrollToAnchor(column);
-							
-							if (lastColumnSection.hasClass('_here')) {
-								
-								lastColumnSection.removeClass('_here');
-								
-							}
-							
-							if (!lastColumn.closest('._section').hasClass('_checked') || !lastColumn.closest('._section').find('form').hasClass('_final')) {
-								
-								lastColumn.slideUp();
-								
-							}
-							
-							lastColumn = column.find('.sec-cntent');
+
+							column.nextAll().removeClass('_here _checked').find('.sec-cntent').slideUp();
 							
 						});
 						
@@ -846,12 +1396,8 @@
 				}
 				
 			};
-
-
 			
 			fns.init();
-
-
 			
 			// TODO: Import basic business logic script here.
 			
