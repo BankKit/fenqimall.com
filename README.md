@@ -38,6 +38,8 @@
 
 - [注册成功 · 跳转中 · 亨元金融 · 汇通分期网](http://goo.gl/33QSFt '点击查看')
 
-- [申请提现 · 详细资料](http://goo.gl/c58MLH "点击查看")
+- [学生 · 申请提现 · 详细资料](http://goo.gl/c58MLH "点击查看")
+
+- [白领 · 申请提现 · 详细资料](http://goo.gl/7GqhgO "点击查看")
 
 ![Geek](http://instasrc.com/1024x468/geek)
