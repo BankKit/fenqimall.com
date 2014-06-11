@@ -80,26 +80,10 @@
 	"buffers":
 	[
 		{
-			"file": "view/jade/unit/withdrawals.details.jade",
-			"settings":
-			{
-				"buffer_size": 31278,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "view/jade/unit/worker.withdrawals.details.jade",
 			"settings":
 			{
-				"buffer_size": 24300,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public/ajax/libs/css/fenqimall.com/scss/withdrawals.details.scss",
-			"settings":
-			{
-				"buffer_size": 15851,
+				"buffer_size": 47417,
 				"line_ending": "Windows"
 			}
 		},
@@ -107,7 +91,7 @@
 			"file": "public/ajax/libs/css/fenqimall.com/scss/worker.withdrawals.details.scss",
 			"settings":
 			{
-				"buffer_size": 15737,
+				"buffer_size": 25754,
 				"line_ending": "Windows"
 			}
 		},
@@ -172,6 +156,11 @@
 	},
 	"file_history":
 	[
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/.gitignore",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/QUERY.STRING.md",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/README.md",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/css/fenqimall.com/scss/withdrawals.details.scss",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/jade/unit/withdrawals.details.jade",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/jade/master/master.jade",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/tool/bat/jade/dir.unit.student.cli.bat",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/tool/bat/jade/dir.unit.worker.cli.bat",
@@ -181,7 +170,6 @@
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/jquery_validation/1.12.0/jquery.validate.js",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/jade/unit/worker.withdrawals.details.jade",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/HELPER.md",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/README.md",
 		"/C/data/db/script/test.js",
 		"/C/Program Files/MongoDB 2.6 Standard/mongod.cfg",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/fenqimall.com/component/srl.js",
@@ -191,10 +179,7 @@
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/css/fenqimall.com_framework/scaffolding/scss/util.scss",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/css/fenqimall.com_framework/scaffolding/scss/global.scss",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/fenqimall.com/common.js",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/css/fenqimall.com/scss/withdrawals.details.scss",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/jade/unit/withdrawals.details.jade",
 		"/C/Users/hppc/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/QUERY.STRING.md",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/spin/2.0.1/spin.js",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/placeholdem/1.0.1/placeholdem.js",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/wow/0.1.6/wow.js",
@@ -271,7 +256,6 @@
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/README.md",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/notifications/README.md",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/jade/README.md",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/.gitignore",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/demo/jade/snippet/public.stylesheet.jade",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/demo/jade/snippet/public.script.jade",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/public/ajax/libs/css/bms_front_end_framework/component/checkbox.css",
@@ -317,6 +301,50 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"_here",
+			"_checked",
+			"')",
+			"_here",
+			"sublime",
+			" ",
+			"\n\n> + ",
+			" ",
+			"> +  · ",
+			" ",
+			"sltWorkLimit",
+			"sltWorkYears",
+			"sltUnitType",
+			"sltUnitAttribute",
+			"iptEntryDepartment",
+			" ",
+			"入学",
+			"\n\n> + \n\n> + \n\n> + \n\n> + \n\n> + \n\n> + \n\n> + \n\n> + \n\n> + \n\n> + ",
+			"_here",
+			"__lbl ",
+			"_checked",
+			"btnContactInfo",
+			"contact",
+			"frmContactInfo",
+			"sec-contact-info",
+			"上海市静安区",
+			"Home",
+			"Co",
+			"co",
+			"Co",
+			"Home",
+			"sec-credit-info",
+			"Credit",
+			"School",
+			"sltAddressSchoolProvince",
+			"iptCurrentCreditCardLimit",
+			"iptCurrentCreditCard",
+			"iptCurrentLoanPayments",
+			"iptCurrentLoanCount",
+			"iptCurrentLoan",
+			"iptCurrentHouseRent",
+			"iptCurrentConsumption",
+			"iptCurrentUnitName",
+			"__lbl",
 			"sec-linkman-info",
 			"Unit",
 			"PersonalInfo",
@@ -400,51 +428,7 @@
 			"sltAddressSchoolProvince",
 			"frm-linkman-info",
 			"'margin-left: 325px;'",
-			"'margin-left: 160px;'",
-			"'margin-left: 330px;'",
-			"style='margin-left: 150px;'",
-			"style='margin-left: 130px;'",
-			", style='margin-left: 10px;'",
-			"minHeight-100",
-			", form='frmSchoolInfo'",
-			", form='frmContactInfo'",
-			"frmSchoolInfoValior",
-			"='address",
-			"addressSchoolDistrict",
-			"addressSchoolCity",
-			"addressSchoolProvince",
-			"valior",
-			"btnSchoolInfo",
-			"frm-contact-info",
-			"addressNowProvince",
-			"iptSchoolName",
-			"District",
-			"City",
-			"Province",
-			"District",
-			"City",
-			"Province",
-			"District",
-			"City",
-			"全日制",
-			"sltEducationalSystem",
-			"__special",
-			"__header",
-			"valior",
-			"'.sec'",
-			".sec",
-			" sec ",
-			"_here",
-			".sec-basic-info",
-			"_panel",
-			"btnSchoolInfo",
-			"$(",
-			"$.",
-			"type='text', value=''",
-			"\n\n															option(value='')",
-			"_frmSchoolInfo",
-			"method.charAt(0).toUpperCase()",
-			"method[ 0 ].toUpperCase()"
+			"'margin-left: 160px;'"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -467,18 +451,18 @@
 			[
 				{
 					"buffer": 0,
-					"file": "view/jade/unit/withdrawals.details.jade",
+					"file": "view/jade/unit/worker.withdrawals.details.jade",
 					"settings":
 					{
-						"buffer_size": 31278,
+						"buffer_size": 47417,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2170,
-								2173
+								2860,
+								2860
 							]
 						],
 						"settings":
@@ -486,95 +470,41 @@
 							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 15.0,
-						"translation.y": 1038.0,
+						"translation.x": 0.0,
+						"translation.y": 2448.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "view/jade/unit/worker.withdrawals.details.jade",
+					"file": "public/ajax/libs/css/fenqimall.com/scss/worker.withdrawals.details.scss",
 					"settings":
 					{
-						"buffer_size": 24300,
+						"buffer_size": 25754,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								22977,
-								22977
+								5540,
+								5540
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2433.0,
+						"translation.y": 5475.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "public/ajax/libs/css/fenqimall.com/scss/withdrawals.details.scss",
-					"settings":
-					{
-						"buffer_size": 15851,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								15644,
-								14328
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 11481.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "public/ajax/libs/css/fenqimall.com/scss/worker.withdrawals.details.scss",
-					"settings":
-					{
-						"buffer_size": 15737,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								15735,
-								15735
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 11703.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "public/ajax/libs/js/fenqimall.com/worker.withdrawals.details.js",
 					"settings":
 					{
@@ -600,7 +530,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 3,
 					"file": "public/ajax/libs/js/fenqimall.com/app/worker.withdrawals.details.logic.js",
 					"settings":
 					{
