@@ -23,7 +23,7 @@
  * 
  * Creation Date: 2014.06.06 16:16 ( Tony ).
  * 
- * Last Update: 2014.06.12 13:56 ( Tony ).    ...//TODO: Update the 'Last Update'. Hello World!
+ * Last Update: 2014.06.12 14:42 ( Tony ).    ...//TODO: Update the 'Last Update'. Hello World!
  * 
  * Music ( Custom ): Countdown (feat. Makj).mp3    ...//TODO: If you are listenning some music, just write the name of songs.
  * 
@@ -1359,9 +1359,7 @@
 									
 									if ($.trim(data) === 'true') {
 										
-										fns.validation.success(form);
-										
-										fnSuccess();
+										fns.validation.success(form, fnSuccess);
 										
 										btnSubmit.text('继续');
 
