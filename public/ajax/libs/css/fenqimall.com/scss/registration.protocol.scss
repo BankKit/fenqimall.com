@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+/**
+ * Statement: ...//TODO: Write statement.
+ * 
+ * Describe: The stylesheet of 'registration.protocol.html'.    ...//TODO[x]: Check description.
+ * 
+ * Further Changes, Comments: ...//TODO: Give a further changes and comments link.
+ * 
+ * Docs: ...//TODO: Give a link about project documents.
+ * 
+ * Original Author: 沈维忠 ( Shen Weizhong / Tony Stark ).
+ * 
+ * Thanks: ...//TODO: If there are some contributors, just mark them.
+ * 
+ * Version: 0.1.0-alpha
+ * 
+ * Creation Date: 2014.06.12 16:32 ( Tony ).
+ * 
+ * Last Update: 2014.06.12 17:28 ( Tony ).    ...//TODO: Update the 'Last Update'.
+ * 
+ * Music ( Custom ):     ...//TODO: If you are listenning some music, just write the name of songs.
+ * 
+ * License: ...//TODO: Give a license.
+ * 
+ * Copyright: ...//TODO: Give a copyright.
+ */
+
+.global-header {
+
+	border-bottom: 1px solid #e3e3e3;
+
+}
+
+.global-header nav {
+
+	display: none !important;
+
+}
+
+.effective-area {
+
+	background-color: #f1f1f1;;
+
+}
+
+.agreementShow > h4 {
+	
+	color: #333;
+	
+	font: 24px "微软雅黑";
+	
+	margin-top: 45px;
+	
+}
+
+.agreementShow > div {
+	
+	z-index: 0;
+	
+	top: 20px;
+	
+	left: 75px;
+	
+	overflow: hidden;
+	
+	background-color: #f1f1f1;
+	
+}
+
+.agreementShow > div > h5,
+
+.agreementShow > div > p {
+	
+	margin: 0 32px 30px 32px;
+	
+}
+
+.agreementShow > div > h5 {
+	
+	color: #555;
+	
+	font-weight: bold;
+	
+	font-size: 14px;
+	
+}
+
+.agreementShow > div > h5.h5_1 {
+	
+	margin-top: 32px;
+	
+}
+
+.agreementShow > div > p {
+	
+	color: #555;
+	
+	font-size: 14px;
+	
+	line-height: 21px;
+	
+	text-indent: 2em;
+	
+}
+
+.agreementShow > div > p > b {
+	
+	font-weight: bold;
+	
+}
+
+.agreementShow > div > p > b.txtIdt {
+
+	margin-left: 2em;
+
+}
+
+.agreementShow > div > p.p_1 {
+	
+	text-indent: 0;
+	
+}
