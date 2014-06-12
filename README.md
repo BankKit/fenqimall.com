@@ -36,6 +36,8 @@
 
 - [栏目 · 梦想基金 · 个人中心](http://goo.gl/asNyO9 '点击查看')
 
+- [注册协议 · 亨元金融 · 汇通分期网](http://resource.fenqimall.com/site_preview/instalment_platform/view/registration.protocol.html "点击查看")
+
 - [注册成功 · 跳转中 · 亨元金融 · 汇通分期网](http://goo.gl/33QSFt '点击查看')
 
 - [学生 · 申请提现 · 详细资料](http://goo.gl/c58MLH "点击查看")
