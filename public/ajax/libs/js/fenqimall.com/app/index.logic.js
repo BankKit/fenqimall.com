@@ -23,7 +23,7 @@
  * 
  * Creation Date: 2014.05.10 15:05 ( Tony ).
  * 
- * Last Update: 2014.06.12 16:21 ( Tony ).    ...//TODO: Update the 'Last Update'.
+ * Last Update: 2014.06.12 18:11 ( Tony ).    ...//TODO: Update the 'Last Update'.
  * 
  * Music ( Custom ): Countdown (feat. Makj).mp3    ...//TODO: If you are listenning some music, just write the name of songs.
  * 
@@ -95,8 +95,14 @@
 
 			var changedCallBack = function () {
 
-				//console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
+				$('#btnSubmitRegister').prop('disabled', false).removeClass('notUseful').addClass('useful');
 
+			};
+
+			var unChecked = function () {
+				
+				$('#btnSubmitRegister').prop('disabled', true).removeClass('useful').addClass('notUseful');
+				
 			};
 
 			SJ('#chkAgreement').studioCheck({
@@ -107,7 +113,7 @@
 
 				increaseArea: '0'
 
-			}).on('ifChecked', changedCallBack);
+			}).on('ifChecked', changedCallBack).on('ifUnchecked', unChecked);
 
 			/*
 					 (__)
