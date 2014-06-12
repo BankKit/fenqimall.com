@@ -23,7 +23,7 @@
  * 
  * Creation Date: 2014.05.10 15:05 ( Tony ).
  * 
- * Last Update: 2014.05.14 10:47 ( Tony ).    ...//TODO: Update the 'Last Update'.
+ * Last Update: 2014.06.12 16:21 ( Tony ).    ...//TODO: Update the 'Last Update'.
  * 
  * Music ( Custom ): Countdown (feat. Makj).mp3    ...//TODO: If you are listenning some music, just write the name of songs.
  * 
@@ -58,7 +58,9 @@
 
 			scroller,
 
-			placeholder_;
+			placeholder_,
+
+			scheck_;
 		
 		SJ = require('jquery');
 
@@ -68,7 +70,9 @@
 
 		scroller = require('component/srl');
 
-		placeholder_ = require('placeholder_');
+		placeholder_ = require('placeholder_'),
+
+		scheck_ = require('scheck');
 
 
 		
@@ -88,6 +92,22 @@
 			*/
 
 			scroller.excute($(':root'));
+
+			var changedCallBack = function () {
+
+				//console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
+
+			};
+
+			SJ('#chkAgreement').studioCheck({
+
+				checkboxClass: 'studioCheckbox_square-red',
+
+				radioClass: 'studioRadiobox_square-red',
+
+				increaseArea: '0'
+
+			}).on('ifChecked', changedCallBack);
 
 			/*
 					 (__)

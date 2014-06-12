@@ -84,9 +84,19 @@ block content
 
 						a(href='#', class='text-center hover-link touch-action change-code') 看不清，换一个
 
+					// Form · Radio Box
+
+					div(class='relative rdoAgreementArea')
+
+						input(id='chkAgreement', class='chkAgreement', name='chkAgreement', type='checkbox')
+
+						label(for='chkAgreement', class='absolute readed') 我已阅读并同意
+
+						a(class='absolute', href='#', title='点击查看《我爱我贷网注册协议》') 《我爱我贷网注册协议》
+
 					// Form button · Submit
 
-					button(id='btnSubmitRegister', class='fullWidth round-box-3px btnSubmit btnSubmitRegister touch-action', name='btnSubmitRegister', type='submit', title='确认提交？') 注册
+					button(id='btnSubmitRegister', class='fullWidth round-box-3px btnSubmit btnSubmitRegister notUseful touch-action', name='btnSubmitRegister', type='submit', title='确认提交？') 注册
 
 				// Login Form.
 
@@ -134,7 +144,7 @@ block content
 
 					// Form button · Submit
 
-					button(id='btnSubmitLogin', class='fullWidth round-box-3px btnSubmit btnSubmitLogin touch-action', name='btnSubmitLogin', type='submit') 登录
+					button(id='btnSubmitLogin', class='fullWidth round-box-3px btnSubmit btnSubmitLogin useful touch-action', name='btnSubmitLogin', type='submit') 登录
 
 block private-body-script
 
