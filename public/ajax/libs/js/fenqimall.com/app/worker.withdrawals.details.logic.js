@@ -23,7 +23,7 @@
  * 
  * Creation Date: 2014.06.06 16:16 ( Tony ).
  * 
- * Last Update: 2014.06.11 15:44 ( Tony ).    ...//TODO: Update the 'Last Update'. Hello World!
+ * Last Update: 2014.06.12 13:56 ( Tony ).    ...//TODO: Update the 'Last Update'. Hello World!
  * 
  * Music ( Custom ): Countdown (feat. Makj).mp3    ...//TODO: If you are listenning some music, just write the name of songs.
  * 
@@ -553,6 +553,12 @@
 								
 							}, '不可填写与左边相同的内容。');
 							
+							$.validator.addMethod("tel", function(value, element) {
+								
+								return this.optional(element) || /((\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$)/i.test(value);
+								
+							}, '请输入正确的电话号码。');
+							
 						},
 						
 						addDefaults: function () {
@@ -797,13 +803,21 @@
 								
 								iptZeraCode: {
 									
-									required: true
+									required: true,
+
+									digits: true,
+
+									minlength: 3,
+
+									maxlength: 4
 									
 								},
 								
 								iptCoTel: {
 									
-									required: true
+									required: true,
+
+									tel: true
 									
 								}
 								
@@ -875,16 +889,62 @@
 								
 								iptCurrentIncome: {
 									
-									required: true
+									required: true,
+
+									number: true
 									
 								},
 								
 								iptCurrentConsumption: {
 									
 									required: true,
+
+									number: true,
 									
 									notEqual: '#iptImmediateFamilyName'
 									
+								},
+
+								iptCurrentHouseRent: {
+
+									number: true
+
+								},
+
+								iptCurrentLoan: {
+
+									number: true
+
+								},
+
+								iptCurrentLoanCount: {
+
+									digits: true
+
+								},
+
+								iptCurrentLoanPayments: {
+
+									number: true
+
+								},
+
+								iptCurrentCreditCardCount: {
+
+									digits: true
+
+								},
+
+								iptCurrentCreditCardLimit: {
+
+									number: true
+
+								},
+
+								iptCurrentCreditCardLimitTotal: {
+
+									number: true
+
 								}
 								
 							},
