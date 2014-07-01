@@ -4,8 +4,16 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin-left"
+			],
+			[
 				"text",
-				"text-center"
+				"text-indent"
+			],
+			[
+				"le",
+				"letter-spacing"
 			],
 			[
 				"remo",
@@ -80,34 +88,34 @@
 	"buffers":
 	[
 		{
-			"file": "view/jade/unit/worker.withdrawals.details.jade",
+			"file": "/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/gruntfile.js",
 			"settings":
 			{
-				"buffer_size": 47417,
+				"buffer_size": 9279,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "public/ajax/libs/css/fenqimall.com/scss/worker.withdrawals.details.scss",
+			"file": "/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/view/jade/master/master.jade",
 			"settings":
 			{
-				"buffer_size": 25754,
+				"buffer_size": 5324,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "public/ajax/libs/js/fenqimall.com/worker.withdrawals.details.js",
+			"file": "view/jade/unit/index.jade",
 			"settings":
 			{
-				"buffer_size": 1043,
+				"buffer_size": 6332,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "public/ajax/libs/js/fenqimall.com/app/worker.withdrawals.details.logic.js",
+			"file": "/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/public/ajax/libs/coffeescript/m.5i5dai.com/common.coffee",
 			"settings":
 			{
-				"buffer_size": 19825,
+				"buffer_size": 4074,
 				"line_ending": "Windows"
 			}
 		}
@@ -115,9 +123,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 374.0,
+		"height": 88.0,
 		"selected_items":
 		[
+			[
+				"list pa",
+				"Package Control: List Packages"
+			],
 			[
 				"list",
 				"Package Control: List Packages"
@@ -156,19 +168,61 @@
 	},
 	"file_history":
 	[
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/fenqimall.com.sublime-project",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/Investment-Site/5i5dai.com.sublime-project",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/m.5i5dai.com.sublime-project",
+		"/C/NODE/nodeapp.sublime-project",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/view/jade/snippet/public.script.jade",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/view/jade/snippet/public.stylesheet.jade",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/view/html/index.html",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/HELPER.md",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/FOLDER STRUCTURE.md",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/README.md",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/node_modules/grunt-contrib-jade/node_modules/jade/node_modules/transformers/lib/transformers.js",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/node_modules/grunt-contrib-jade/node_modules/jade/node_modules/transformers/README.md",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/node_modules/grunt-contrib-jade/tasks/jade.js",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/node_modules/grunt-contrib-jade/node_modules/jade/jade.js",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/package.json",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/.gitignore",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/.travis.yml",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/public/ajax/libs/scss/m.5i5dai.com_framework/m.5i5dai.com_framework.scss",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/view/jade/master/blank.jade",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/CDN/ajax/libs/js/requirejs/2.1.14/require.js",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/conf/server.xml",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/conf/tomcat-users.xml",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/conf/web.xml",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/fenqimall.com/app/index.logic.js",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/fenqimall.com/app/registration.protocol.logic.js",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/css/fenqimall.com/scss/registration.protocol.scss",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/jade/unit/registration.protocol.jade",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/README.md",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/Investment-Site/README.md",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/fenqimall.com/app/withdrawals.details.logic.js",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/tool/bat/jade/dir.unit.protocol.cli.bat",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/jade/master/blank.jade",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/fenqimall.com/app/ridirector.logic.js",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/fenqimall.com/registration.protocol.js",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/fenqimall.com/redirector.js",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/jade/unit/withdrawals.details.jade",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/jade/unit/worker.withdrawals.details.jade",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/css/fenqimall.com/scss/index.scss",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/css/fenqimall.com/scss/withdrawals.details.scss",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/jade/unit/index.jade",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/fenqimall.com/common.js",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/fenqimall.com/app/worker.withdrawals.details.logic.js",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/css/fenqimall.com/scss/worker.withdrawals.details.scss",
+		"/C/Users/hppc/Desktop/txt/行业类别.txt",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/fenqimall.com/worker.withdrawals.details.js",
+		"/C/Users/hppc/Desktop/txt/住房状况.csv",
+		"/C/Users/hppc/Desktop/txt/婚姻状况.csv",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/.gitignore",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/QUERY.STRING.md",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/README.md",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/css/fenqimall.com/scss/withdrawals.details.scss",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/jade/unit/withdrawals.details.jade",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/jade/master/master.jade",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/tool/bat/jade/dir.unit.student.cli.bat",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/tool/bat/jade/dir.unit.worker.cli.bat",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/fenqimall.com/app/withdrawals.details.logic.js",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/tool/bat/jade/dir.unit.index.cli.bat",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/tool/bat/jade/dir.unit.redirector.cli.bat",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/jquery_validation/1.12.0/jquery.validate.js",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/jade/unit/worker.withdrawals.details.jade",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/HELPER.md",
 		"/C/data/db/script/test.js",
 		"/C/Program Files/MongoDB 2.6 Standard/mongod.cfg",
@@ -178,7 +232,6 @@
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/screen-to-gif.css",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/css/fenqimall.com_framework/scaffolding/scss/util.scss",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/css/fenqimall.com_framework/scaffolding/scss/global.scss",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/fenqimall.com/common.js",
 		"/C/Users/hppc/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/spin/2.0.1/spin.js",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/placeholdem/1.0.1/placeholdem.js",
@@ -194,25 +247,19 @@
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/jquery_validation/1.11.1/jquery.validate.js",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/css/fenqimall.com_framework/base/scss/form.scss",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/css/fenqimall.com_framework/scaffolding/scss/grid.fluid.scss",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/css/fenqimall.com/scss/index.scss",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/css/fenqimall.com_framework/base/scss/button.scss",
 		"/D/Regular/Document/我的开发文件/STUDIO/[1]Project/[2]Reference Project/[1]Trying ( Single Case )/Ajax_Struts2_Hibernate3/2012.12.06.12.35.Thursdy/Ajax_Study/WebRoot/JavaScript/[2]Self_JS_Library/Login.js",
 		"/D/Regular/Document/我的学习文件/JAVA Study/[3]Java Project Study/尚食网开发项目/[1]项目/SSWeb/WebRoot/Scripts/DialogForm_Login.js",
 		"/C/Users/hppc/Desktop/joyride/joyride-master/demo/demo.html",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/css/fenqimall.com_framework/scaffolding/scss/master.scss",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/fenqimall.com/app/index.logic.js",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/jquery_validation/README.md",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/jquery_validation/1.12.0/jquery.validate.min.js",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/jade/snippet/public.stylesheet.jade",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/fenqimall.com/app/ridirector.logic.js",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/fenqimall.com/redirector.js",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/css/fenqimall.com/scss/redirector.scss",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/jade/unit/redirector.jade",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/jade/unit/index.jade",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/img/fenqimall.com/mix/mix-1.data.url.md",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/css/fenqimall.com_framework/scaffolding/global.css",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/jade/component/personal.center_dream.fund.jade",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/jade/master/blank.jade",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/css/fenqimall.com/scss/personal.center_dream.fund.scss",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/tool/bat/jade/dir.component.cli.bat",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/jade/master.jade",
@@ -248,42 +295,7 @@
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/css/fenqimall.com_framework/media_query/scss/retina.scss",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/tool/bat/root.direct.bat",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/tool/bat/jade/dir.unit.cli.bat",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/tool/bat/sass/dir.fq.cli.bat",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/tool/bat/sass/dir.scaffolding.cli.bat",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/tool/bat/sass/dir.media.query.cli.bat",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/tool/bat/sass/dir.base.cli.bat",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/tool/bat/sass/dir.component.cli.bat",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/README.md",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/notifications/README.md",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/jade/README.md",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/demo/jade/snippet/public.stylesheet.jade",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/demo/jade/snippet/public.script.jade",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/public/ajax/libs/css/bms_front_end_framework/component/checkbox.css",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/public/ajax/libs/css/bms_front_end_framework/scaffolding/global.css",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/public/ajax/libs/js/bms_front_end_framework/common.js",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/public/ajax/libs/js/bms_front_end_framework/component/checkbox.js",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/public/ajax/libs/js/bms_front_end_framework/component/datepicker.js",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/public/ajax/libs/css/bms_front_end_framework/component/scss/upload.scss",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/public/ajax/libs/css/bms_front_end_framework/base/form.css",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/public/ajax/libs/css/jquery_ui/theme_2/scss/jquery.ui.core.scss",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/public/ajax/libs/css/jquery_ui/theme_2/scss/jquery.ui.datepicker.scss",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/public/ajax/libs/css/jquery_ui/theme_2/scss/jquery.ui.theme.scss",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/public/ajax/libs/img/bms_front_end_framework/component/ddd.txt",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/public/ajax/libs/css/bms_front_end_framework/base/scss/button.scss",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/public/ajax/libs/css/bms_front_end_framework/base/button.css",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/public/ajax/libs/css/jquery_ui/theme_2/scss/jquery.ui.button.scss",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/public/ajax/libs/css/jquery_ui/theme_2/scss/jquery.ui.autocomplete.scss",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/public/ajax/libs/css/jquery_ui/theme_2/scss/jquery.ui.accordion.scss",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/public/ajax/libs/css/bms_front_end_framework/scaffolding/scss/global.scss",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/public/ajax/libs/css/jquery_ui/jquery.ui.datepicker.css",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/public/ajax/libs/css/jquery_ui/jquery.ui.core.css",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/public/ajax/libs/css/jquery_ui/jquery.ui.theme.css",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/tool/bat/sass/dir.jquery.ui.cli.bat",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/tool/bat/sass/dir.base.cli.bat",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/public/ajax/libs/js/bms_front_end_framework/app/master.main.js",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/public/ajax/libs/css/jquery_ui/theme_2/scss/jquery.ui.dialog.scss",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/public/ajax/libs/css/jquery_ui/theme_2/scss/jquery.ui.menu.scss",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/BMS-Front-End-Framework/public/ajax/libs/css/jquery_ui/theme_2/scss/jquery.ui.progressbar.scss"
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/tool/bat/sass/dir.fq.cli.bat"
 	],
 	"find":
 	{
@@ -301,6 +313,71 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"filter",
+			"requirejsVersion",
+			"requirejs-version",
+			"我爱我贷网",
+			"top: 3px;",
+			"top: 0;",
+			"12px",
+			"3px",
+			"注册",
+			"\n看不清，换一个",
+			"iptZeraCode",
+			"http://goo.gl/c58MLH",
+			"redirector-link",
+			"frmCreditInfoValior",
+			"val",
+			"var _district",
+			"var _district = _this.parent().find('select').filter(':eq(2)');",
+			".children().remove();",
+			"Province",
+			"iptHomeAddressDetails",
+			"sltAddressHomeDistrict",
+			"sltAddressHomeCity",
+			"sltAddressHomeProvince",
+			"iptCoAddressDetails",
+			"sltAddressCoDistrict",
+			"sltAddressCoCity",
+			"sltAddressCoProvince",
+			"iptPermanentResidenceAddressDetails",
+			"sltAddressPermanentResidenceDistrict",
+			"sltAddressPermanentResidenceCity",
+			"sltAddressPermanentResidenceProvince",
+			"iptSchoolAddressDetails",
+			"sltAddressSchoolDistrict",
+			"sltAddressSchoolCity",
+			"sltAddressSchoolProvince",
+			"frmCreditInfoValior",
+			"全日制",
+			"iptEmergencyContactName",
+			"iptImmediateFamilyName",
+			"frmLinkmanInfoValior",
+			"iptZeraCode",
+			"iptCoTel",
+			"iptZeraCode",
+			");\n",
+			"val",
+			".next()",
+			"sltAddressNowCity",
+			"sltAddressNowProvince",
+			"sltAddressNowType",
+			"iptHomeAddressDetails",
+			"sltAddressHomeDistrict",
+			"sltAddressHomeCity",
+			"sltAddressHomeProvince",
+			"iptSchoolAddressDetails",
+			"sltAddressSchoolDistrict",
+			"sltAddressSchoolCity",
+			"sltAddressSchoolProvince",
+			"submitHandle",
+			"submitHandler",
+			"http://192.168.0.181:8080/fenqimall/CollarFormServlet",
+			"//114.215.194.232:8180/formServlet",
+			"sltAdmissionDateYear",
+			"sltEducationBackground",
+			"sltEducationalSystem",
+			"iptStuMajor",
 			"_here",
 			"_checked",
 			"')",
@@ -363,72 +440,7 @@
 			"毕业",
 			"请选择您的毕业时间",
 			"现单位入职",
-			"BusinessKind",
-			"类别",
-			"iptCurrentUnitName",
-			"请填写您的现单位名称",
-			"sltEducationBackground",
-			"EDC",
-			"iptSchoolName",
-			"frmContactInfo",
-			"sec-contact-info",
-			"_panel",
-			"matrimony",
-			"Educational",
-			"请填写您的毕业院校",
-			"Admission",
-			"iptSchoolName",
-			"frmSchoolInfo",
-			"sec-school-info",
-			">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>",
-			"btnSubmit",
-			"button",
-			"btn-tool",
-			"required",
-			"/",
-			", aria-required='true'",
-			"//114.215.194.232:8180/provinceServlet",
-			"$(form)",
-			"$(form).next()",
-			"scrollToAnchor",
-			"thatSection",
-			"case",
-			"frmSchoolInfoValior",
-			"{\n\n						_submit();",
-			"//_submit();",
-			"{\n\n							_submit();",
-			"192.168.0.59:8080/fenqimall",
-			"option(value='') 请选择",
-			"option(value='')",
-			"fnReqSuccess(form);",
-			"normalFlow",
-			"spin",
-			"jqValidate",
-			"jqueryXdomainrequest",
-			"placeholder_",
-			"scroller",
-			"* ",
-			" · userId",
-			" · appNo",
-			" · frmUuid",
-			"appNo",
-			"frmUuid",
-			" ",
-			"> + 现居住地址（）",
-			"> + ",
-			"> + 学校地址",
-			"> + ",
-			"ipt",
-			"slt",
-			"_here",
-			"iptEmergencyContact",
-			"iptImmediateFamily",
-			"iptEmergencyContactInfo",
-			"iptImmediateFamilyInfo",
-			"sltAddressSchoolProvince",
-			"frm-linkman-info",
-			"'margin-left: 325px;'",
-			"'margin-left: 160px;'"
+			"BusinessKind"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -446,103 +458,23 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "view/jade/unit/worker.withdrawals.details.jade",
+					"file": "/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/gruntfile.js",
 					"settings":
 					{
-						"buffer_size": 47417,
+						"buffer_size": 9279,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2860,
-								2860
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2448.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "public/ajax/libs/css/fenqimall.com/scss/worker.withdrawals.details.scss",
-					"settings":
-					{
-						"buffer_size": 25754,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5540,
-								5540
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 5475.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "public/ajax/libs/js/fenqimall.com/worker.withdrawals.details.js",
-					"settings":
-					{
-						"buffer_size": 1043,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								434,
-								434
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "public/ajax/libs/js/fenqimall.com/app/worker.withdrawals.details.logic.js",
-					"settings":
-					{
-						"buffer_size": 19825,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								550,
-								584
+								2676,
+								2676
 							]
 						],
 						"settings":
@@ -552,6 +484,87 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/view/jade/master/master.jade",
+					"settings":
+					{
+						"buffer_size": 5324,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								330,
+								330
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "view/jade/unit/index.jade",
+					"settings":
+					{
+						"buffer_size": 6332,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								509,
+								509
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/public/ajax/libs/coffeescript/m.5i5dai.com/common.coffee",
+					"settings":
+					{
+						"buffer_size": 4074,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2116,
+								2116
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1873.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -592,7 +605,7 @@
 	"menu_visible": true,
 	"replace":
 	{
-		"height": 0.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -600,6 +613,54 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"readme.md",
+				"m.5i5dai.com/README.md"
+			],
+			[
+				"index.html",
+				"m.5i5dai.com/view/html/index.html"
+			],
+			[
+				"package",
+				"m.5i5dai.com/package.json"
+			],
+			[
+				"common.coffee",
+				"m.5i5dai.com/public/ajax/libs/coffeescript/m.5i5dai.com/common.coffee"
+			],
+			[
+				"gruntfile.js",
+				"m.5i5dai.com/gruntfile.js"
+			],
+			[
+				"blank.jade",
+				"m.5i5dai.com/view/jade/master/blank.jade"
+			],
+			[
+				"helper.md",
+				"m.5i5dai.com/HELPER.md"
+			],
+			[
+				"master.jade",
+				"m.5i5dai.com/view/jade/master/master.jade"
+			],
+			[
+				"index.logic",
+				"fenqimall.com/public/ajax/libs/js/fenqimall.com/app/index.logic.js"
+			],
+			[
+				"readme",
+				"fenqimall.com/README.md"
+			],
+			[
+				"common",
+				"fenqimall.com/public/ajax/libs/js/fenqimall.com/common.js"
+			],
+			[
+				"withdrawal.de",
+				"fenqimall.com/public/ajax/libs/js/fenqimall.com/app/withdrawals.details.logic.js"
+			],
 			[
 				"jquery",
 				"fenqimall.com/public/ajax/libs/js/jquery_validation/1.12.0/jquery.validate.js"
@@ -635,10 +696,6 @@
 			[
 				"util",
 				"public/ajax/libs/css/fenqimall.com_framework/scaffolding/scss/util.scss"
-			],
-			[
-				"common",
-				"public/ajax/libs/js/fenqimall.com/common.js"
 			],
 			[
 				"master",
@@ -683,6 +740,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 241.0,
+	"side_bar_width": 254.0,
 	"status_bar_visible": true
 }
