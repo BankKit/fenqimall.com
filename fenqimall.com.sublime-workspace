@@ -88,42 +88,26 @@
 	"buffers":
 	[
 		{
-			"file": "/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/gruntfile.js",
+			"file": "README.md",
 			"settings":
 			{
-				"buffer_size": 9279,
+				"buffer_size": 1502,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/view/jade/master/master.jade",
+			"file": "fenqimall.com.sublime-project",
 			"settings":
 			{
-				"buffer_size": 5324,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "view/jade/unit/index.jade",
-			"settings":
-			{
-				"buffer_size": 6332,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/public/ajax/libs/coffeescript/m.5i5dai.com/common.coffee",
-			"settings":
-			{
-				"buffer_size": 4074,
-				"line_ending": "Windows"
+				"buffer_size": 744,
+				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 88.0,
+		"height": 374.0,
 		"selected_items":
 		[
 			[
@@ -169,6 +153,12 @@
 	"file_history":
 	[
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/fenqimall.com.sublime-project",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/web.site.front-end.project.template/.gitignore",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/web.site.front-end.project.template/web.site.front-end.project.template.sublime-project",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/public/ajax/libs/coffeescript/m.5i5dai.com/common.coffee",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/jade/unit/index.jade",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/view/jade/master/master.jade",
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/gruntfile.js",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/Investment-Site/5i5dai.com.sublime-project",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/m.5i5dai.com.sublime-project",
 		"/C/NODE/nodeapp.sublime-project",
@@ -207,7 +197,6 @@
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/jade/unit/worker.withdrawals.details.jade",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/css/fenqimall.com/scss/index.scss",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/css/fenqimall.com/scss/withdrawals.details.scss",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/jade/unit/index.jade",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/fenqimall.com/common.js",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/js/fenqimall.com/app/worker.withdrawals.details.logic.js",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/css/fenqimall.com/scss/worker.withdrawals.details.scss",
@@ -290,12 +279,7 @@
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/robots.txt",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/map.geojson",
 		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/tool/bat/sass/dir.jquery.ui.cli.bat",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/jade/master/master@1.jade",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/css/fenqimall.com_framework/media_query/scss/print.scss",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/public/ajax/libs/css/fenqimall.com_framework/media_query/scss/retina.scss",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/tool/bat/root.direct.bat",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/tool/bat/jade/dir.unit.cli.bat",
-		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/tool/bat/sass/dir.fq.cli.bat"
+		"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/fenqimall.com/view/jade/master/master@1.jade"
 	],
 	"find":
 	{
@@ -463,24 +447,23 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/gruntfile.js",
+					"file": "README.md",
 					"settings":
 					{
-						"buffer_size": 9279,
+						"buffer_size": 1502,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2676,
-								2676
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -490,81 +473,27 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/view/jade/master/master.jade",
+					"file": "fenqimall.com.sublime-project",
 					"settings":
 					{
-						"buffer_size": 5324,
+						"buffer_size": 744,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								330,
-								330
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "view/jade/unit/index.jade",
-					"settings":
-					{
-						"buffer_size": 6332,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								509,
-								509
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/public/ajax/libs/coffeescript/m.5i5dai.com/common.coffee",
-					"settings":
-					{
-						"buffer_size": 4074,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2116,
-								2116
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1873.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -731,10 +660,10 @@
 		[
 			[
 				"",
-				"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/m.5i5dai.com/m.5i5dai.com.sublime-project"
+				"/D/Regular/Development/Apache Software Foundation/Tomcat/webapps/DROPBOX/Browser Side Workspace/web.site.front-end.project.template/web.site.front-end.project.template.sublime-project"
 			]
 		],
-		"width": 380.0
+		"width": 1118.0
 	},
 	"show_minimap": true,
 	"show_open_files": true,
