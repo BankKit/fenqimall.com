@@ -1,0 +1,63 @@
+{
+	
+	"name": "fenqimall.com",
+	
+	"description": "亨元金融 · 汇通分期网 ( Hengyuan Finance, Huitong Instalment, Front-end Project )",
+	
+	"keywords": [
+		
+		"Hengyuan",
+		
+		"Hengyuan Finance",
+		
+		"Huitong",
+		
+		"Instalment",
+		
+		"Huitong Instalment",
+		
+		"Front-end Project"
+		
+	],
+	
+	"version": "0.1.0",
+	
+	"author": {
+		
+		"name": "沈维忠 ( Shen Weizhong / Tony Stark )",
+		
+		"email": "swzyocowboy@icloud.com",
+		
+		"url": "https://github.com/Tony-Stark"
+		
+	},
+	
+	"repository": {
+		
+		"type": "git",
+		
+		"url": "https://github.com/Hengyuan-Finance/fenqimall.com.git"
+		
+	},
+	
+	"private": false,
+	
+	"dependencies": {},
+	
+	"devDependencies": {
+		
+		"grunt": "^0.4.5",
+		
+		"grunt-contrib-watch": "^0.6.1",
+		
+		"grunt-newer": "^0.7.0",
+		
+		"grunt-notify": "^0.3.0",
+		
+		"time-grunt": "^0.3.2"
+		
+	},
+	
+	"license": "GPL-V3"
+	
+}
