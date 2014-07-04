@@ -23,7 +23,7 @@
  * 
  * Creation Date: 2014.06.06 16:16 ( Tony ).
  * 
- * Last Update: 2014.06.12 14:42 ( Tony ).    ...//TODO: Update the 'Last Update'. Hello World!
+ * Last Update: 2014.07.04 16:47 ( Tony ).    ...//TODO: Update the 'Last Update'. Hello World!
  * 
  * Music ( Custom ): Countdown (feat. Makj).mp3    ...//TODO: If you are listenning some music, just write the name of songs.
  * 
@@ -558,6 +558,14 @@
 								return this.optional(element) || /((\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$)/i.test(value);
 								
 							}, '请输入正确的电话号码。');
+							
+							$.validator.addMethod("chinese", function(value, element, param) {
+								
+								//Working on this →_→ return this.optional(element) || /([\u4E00-\u9FA5]|\W){1,5}(?:·([\u4E00-\u9FA5]|\W){1,5})*/i.test(value);
+
+								return this.optional(element) || /^[\u4e00-\u9fa5]+$/i.test(value);
+								
+							}, '请输入中文。');
 							
 						},
 						
@@ -1179,13 +1187,21 @@
 								
 								iptImmediateFamilyName: {
 									
-									required: true
+									required: true,
+									
+									nowhitespace: true,
+									
+									chinese: true
 									
 								},
 								
 								iptEmergencyContactName: {
 									
 									required: true,
+									
+									nowhitespace: true,
+									
+									chinese: true,
 									
 									notEqual: '#iptImmediateFamilyName'
 									
